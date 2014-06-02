@@ -1,40 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  {% include head.html %}
 
-    </head>
-    <body>
+  <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">startsidan</a>
-          </div>
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+          <small>{{ site.tagline }}</small>
+        </h3>
+      </div>
 
-          {{ content }}
+      {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Per Lundberg<br />
-                per@halleluja.nu
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/perlun">github.com/perlun</a><br />
-                <a href="https://twitter.com/perlun">twitter.com/perlun</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="footer">
+        <p>
+          &copy; {{ site.time | date: '%Y' }} Per Lundberg.
+        </p>
+      </div>
+    </div>
 
-    </body>
+  </body>
 </html>

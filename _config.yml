@@ -1,3 +1,11 @@
-name: per.halleluja.nu
-markdown: redcarpet
-pygments: false
+# Dependencies
+markdown:         redcarpet
+pygments:         false
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+name:             per.halleluja.nu
+paginate:         10
+baseurl:          /
