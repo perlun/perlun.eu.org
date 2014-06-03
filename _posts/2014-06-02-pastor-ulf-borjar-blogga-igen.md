@@ -34,7 +34,7 @@ Jag delar pastor Ulf och Birgittas längtan om en större enighet inom Kyrkan. J
 
 **Epilog**: Jag kände att jag överdrev lite grann i det jag skrev här ovanför. Men en liten stund efter att jag skrivit ovanstående text började jag läsa [det här gamla blogginlägget](http://ulfekman.nu/2012/05/15/till-forsvar-for-peter-kreeft) från Ulfs blogg ("Till försvar för Peter Kreeft"), och då även skumma igenom kommentarerna. Man blir bara så ledsen. Så här skriver en som kallar sig Anna:
 
-> Ulf nu har du gett oss bokförslag som vi karismatiska kristna helst inte läser. Vill du ge oss lite bra förslag på kristna böcker där inte någon katolik är inblandad. Både frn Sverige och USA. (Och de får vara från vilket samfund som helst, men inte från det katolska)
+> Ulf nu har du gett oss bokförslag som vi karismatiska kristna helst inte läser. Vill du ge oss lite bra förslag på kristna böcker där inte någon katolik är inblandad. Både från Sverige och USA. (Och de får vara från vilket samfund som helst, men inte från det katolska)
 
 Helt seriöst: vad är detta för en sjuk inställning egentligen? Att dissa en bok, och författare, enbart på grund av denne är katolik? Det där är ju en fruktansvärt fördomsfull inställning som kommer till tals i ovanstående kommentar.
 
