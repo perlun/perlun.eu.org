@@ -12,4 +12,4 @@ Du kan även komma i kontakt med mig på följande vis:
 
 * Twitter: https://twitter.com/perlundberg
 * GitHub: http://github.com/perlun
-* LinkedIn: http://linkedin.com/perlun **TODO**
+* LinkedIn: http://fi.linkedin.com/in/perlun
