@@ -8,6 +8,6 @@ Denna blogg drivs av Per Lundberg. Som bloggmotor används [Jekyll](http://jekyl
 
 Du kan även komma i kontakt med mig på följande vis:
 
-* Twitter: http://twitter.com/perlun
+* Twitter: https://twitter.com/perlundberg
 * GitHub: http://github.com/perlun
 * LinkedIn: http://linkedin.com/perlun **TODO**
