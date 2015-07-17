@@ -39,8 +39,8 @@ comments:
     om i ett annat blogginlägg för en stund sedan..."
 ---
 <p><a href="http://nyheter24.se/sport/blogg/niklas-wikegard/">Niklas Wikegård</a> har rätt. Det skulle behövas en TV-kanal (eller ett par stycken kanske, för att hantera matcher som sänds samtidigt) som samlar all ishockey.</p>
-
 <p>Situationen som den är nu är hyfsat flummig. SVT sänder Junior-VM (på SVT24) och Sweden Hockey Games (på de "vanliga" SVT1/2). Canal+ sänder Elitserien, på Canal+ Sport. Men inte slutspelet, för det sänds på TV9. Ehh...? Hockeyallsvenskan i sin tur sänds på TV4 Sport, och VM sänds ju som ni kanske vet på TV6 (historiskt TV3, men flyttat för något år sedan till TV6 istället).</p>
+
 <p>Det som föranledde det här blogginlägget är slutligen denna match: Sverige-Schweiz, en träningslandskamp, sänds på TV8...</p>
 <p>Detta är faktiskt hyfsat sjukt måste jag säga. För att man ska få ett komplett hockeyutbud behöver man alltså se till att man har tillgång till inte mindre än <strong>åtta</strong> TV-kanaler.</p>
 <p>Konsolidera TV-hockeyn, nu!!!</p>
