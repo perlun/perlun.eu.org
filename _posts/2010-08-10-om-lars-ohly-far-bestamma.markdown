@@ -64,7 +64,7 @@ comments:
     betala 2 gånger??"
 ---
 <p>...så blir det en "återställningspolitik" som råder efter valet i september. Och frågan är om inte Ohly och den vänsterpartistiska retoriken får lite oförtjänt mycket utrymme i de rödgrönas politik?</p>
-<p>I en <a href="http://svt.se/2.128339/1.2102217/rodgrona_vill_ha_statlig_bilprovning">nyhet från idag</a> så poängteras just detta, att blir det en röd(grön) valseger i höst så vill man återställa, förstatliga Bilprovningen. Det låter ju aldeles lysande, särskilt som Bilprovningen med dess VD själva välkomnar att man blir konkurrensutsatta... (<a href="http://www.bilprovningen.se/Externt/bpwebabout.nsf/va_LookupWeb/5C7A5689469C9E9EC12573EE002B4C85!opendocument&amp;m=25">länk</a>)</p>
+<p>I en <a href="http://www.svt.se/nyheter/inrikes/rodgrona-vill-ha-statlig-bilprovning">nyhet från idag</a> så poängteras just detta, att blir det en röd(grön) valseger i höst så vill man återställa, förstatliga Bilprovningen. Det låter ju aldeles lysande, särskilt som Bilprovningen med dess VD själva välkomnar att man blir konkurrensutsatta... (<a href="http://www.bilprovningen.se/Externt/bpwebabout.nsf/va_LookupWeb/5C7A5689469C9E9EC12573EE002B4C85!opendocument&amp;m=25">länk</a>)</p>
 
 <p>Låt det vara uppenbart för var och en: höstens val är i högsta grad en fråga om ideologi. När Lars Ohly (och resten av de röd(gröna)) kritiserar avregleringen av Bilprovningen (och lovar att försöka "stoppa" den) så finns det ideologiska bakgrunder till detta.</p>
 <p>Man kanske rentav anser att testning och årlig granskning av personbilar är en del av den basala samhällsservicen som bör utföras i offentlig regi?</p>
