@@ -47,6 +47,7 @@ comments:
     jag skulle våga vara sådär frimodig 100% av tiden... inte bara på bloggen...
 ---
 <p>I <a href="http://www.hbl.fi">Hufvudstadsbladet</a> (usch vilket jobbigt  ord att skriva) för några veckor hittade jag ett citat från en text jag själv skrivit. Det tyckte jag var ganska coolt!  :-) Det var på Debatt-sidan (sida 13, onsdag 22 juli 2009) som Monica Ålgars skriver om Litauens nya morallag, i vilken det görs olagligt att "sprida positiv information om bland annat homo- och bisexualitet". Efter att ha argumenterat emot lagen i några stycken så presenterar Ålgars några kommentarer från <a href="http://www.vasabladet.se">Vasabladets</a> hemsida (mer specifikt från <a href="http://www.vasabladet.fi/story.aspx?storyID=44766">den här artikeln</a>, "Litauisk lag mot homosex och hypnos") - bland annat ett stycke som lyder så här:</p>
+
 <blockquote><p>Underbart att det finns något land som vågar gå emot den vänstervridna, liberala, homosexförespråkande influensen från Västeuropas politiker och medier.</p></blockquote>
 <p>Ålgars kommentar:</p>
 <blockquote><p>Inför dem som tänker så tappar jag orden.</p></blockquote>

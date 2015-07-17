@@ -24,6 +24,7 @@ tags: []
 comments: []
 ---
 <p>Just a quickie this time. Of course, I couldn't keep my promise of waiting with this until we move into the house. :-) I looked into it again, and this time, I actually got it working! It seemed to work pretty well now, and MythTV surely makes these IPTV streams more useful.</p>
+
 <p>I've set up an m3u file for myself, you can get it at <a href="http://milou.halleluja.nu/anvia.m3u">this</a> URL. (Please, download it and keep a copy at your own server; don't point your MythTV installation to my URL.) Using these settings, I can get all channels except for channel 8 working. (I'm unsure what that channel is; it doesn't work in VLC either.)</p>
 <p>So... there are a few channels missing that could be added, but I don't think I'll care about them now. (I could get their IP addresses using the VLC Mozilla plugin + tcpdump, but... some other day.)</p>
 <p>MythTV definitely seems like a promising program, that's for sure. Of course, it might be a bit "too technical" in some senses, and the subtitles did seem to work a bit weird (it was configured to Swedish, but it still didn't put on Swedish subtitles on FST5 automatically?? Anyway, pressing M and chosing Swedish subtitles worked, so that's good), but still... the EPG seems great, and its recording availabilities are awesome. You just select a title you want to record, and you can make the program record that title every time it's being broadcast, on any channel... for example. Just one word: awesome!</p>

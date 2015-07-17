@@ -42,6 +42,7 @@ comments:
     typ och somnar när man lyssnar. :-)
 ---
 <p>Det finns ju ett uttryck som säger att "mister du en står det dig tusen åter". Detta har faktiskt visat sig sant för mig i år. :-) Mitt eget favoritlag, Redhawks, åkte ju som bekant ut redan innan kvalserien. Bättre lycka nästa år, helt enkelt.</p>
+
 <p><strong>Men</strong> vad som är roligt är att när det laget åkte ut så seglade ett nytt lag fram på horisonten: <a href="http://www.vaasansport.fi">Vasa Sport</a>. För den som inte känner till detta förträffliga lag så är det alltså Vasas eget ishockeylag. Precis som Redhawks spelar man i serien under den högsta serien (FM-ligan), nämligen Mestis. Till skillnad från Redhawks så åkte man dock <em>inte</em> ut ur motsvarigheten till kvalserien. Tvärtom så vann man hela serien och blev, för första gången någonsin, segrare i Mestis!</p>
 <p>Det finska ligasystemet fungerar lite annorlunda än det svenska. I Sverige har vi ju (just nu åtminstone) de tre bästa lagen som går vidare automatiskt till kvalserien. Sedan får lag 4-7 kvala om den fjärde kvalserieplatsen. Dessa fyra lag kompletteras sedan med lag 11 och 12 från Elitserien, alltså de lag som kom sist i Elitseriens grundspel. Totalt 6 lag som spelar 10 matcher mot varandra, dvs. varje lag möter varje annat lag två gånger.</p>
 <p>Hursomhelst...</p>

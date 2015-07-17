@@ -24,6 +24,7 @@ tags: []
 comments: []
 ---
 <p>Som ni säkert redan hört vid det här laget blev <a href="http://svt.se/2.127996/1.1904647/fiasko_for_tre_kronor_-_utslagna_i_kvartsfinal">Tre Kronor utslagna av Slovakien</a> i kvartsfinalen i de pågående OS-tävlingarna i Vancouver. Trist, förstås, för alla oss svenskar. Men vill ändå ta några rader för att reflektera över denna match.</p>
+
 <p>Först vill jag säga att jag är inte riktigt nöjd med Bengt-Åkes insats. Precis som Micke Renberg är inne på så fick bröderna Sedin bara spela 8 minuter i de två första perioderna, och det är nog alltför lite. Det är trots allt tränarens uppgift att se till att rätt gubbar lirar, så här tycker jag inte Bengt-Åke kan skylla ifrån sig med att "de fick fler byten" eller liknande. Han måste ha bättre koll helt enkelt, och driva en mer <em>aktiv</em> coachning.</p>
 <p>Sedan så är det en annan sak som är lite intressant... Det är matchen mot Vitryssland från 2002. En finlandssvensk kollega tipsade mig om <a href="http://www.aftonbladet.se/nyheter/article59722.ab">den här</a> artikeln. Svenska medier gav Sverige segern redan på förhand, och så gick det som det gick... ungefär likadant som nu: man blev alltför självsäkra, vilket tyvärr brukar straffa sig.</p>
 <p>Men låt oss nu jämföra just Vitrysslands-matchen från 2002. Det finns nämligen skrämmande stora likheter:</p>

@@ -24,6 +24,7 @@ tags: []
 comments: []
 ---
 <p><a href="http://www.hockeykanalen.se">Hockeykanalen</a> <a href="http://www.hockeykanalen.se/1.1166736/2009/08/28/foppa_det_kandes_mycket_bra">skriver</a> att Foppa har spelat en match mot Geneve-Servette, och att "det kändes mycket bra". Härligt! Hoppas verkligen det håller i sig. En Foppa som funkar och som klarar av att spela kan tillföra välbehövlig extraenergi till Sveriges OS-trupp. Och varför inte VM också? Men det förutsätter som sagt att han fortsätter att må bra i foten, och också att han kommer i form.</p>
+
 <p>Är han i form så är han ju given i OS-truppen. Och som sagt - varför inte VM också? Jag hade själv ingen TV år 2006 så jag såg inte varken OS eller VM under "dubbelguldåret". OS-matchen har jag sedan sett i efterhand (tack för det, <a href="http://www.thepiratebay.org">Pirate Bay</a>. :-) men inte VM-finalen.</p>
 <p>Det vore ju rätt kul med en "favorit i repris". Vi vet att Sverige har ett av världens absolut bästa hockeylag. Lyckas Bengan bara få till ett bra lag med en bra kemi (och fysik), och coachar det tillräckligt bra så kan vi nå hur långt som helst. Då ska "slipsen på", som Wikegård har påpekat, och det ska vara lite aktiv coachning där han visar att han faktiskt <strong>vill</strong> vinna.</p>
 <p>Det är knappt så att man kan vänta ända fram till februari faktiskt! :-) Det blir kul med Czech Hockey Games som drar igång nästa vecka. Men då lär väl Foppa knappast vara med...</p>

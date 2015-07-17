@@ -42,6 +42,7 @@ comments:
 ---
 <p>...så har jag nu sett till att få ordning på parabolen. Jag har ända sedan i höstas, då vi fortfarande var fast i betongghettot, haft en önskan om att kunna få in både Thor (1°W) och Sirius (4,8°E). I förra lägenheten så fick jag inte till det; jag hade heller ingen DiSEqC-dosa utan provade mest att bara "växla om" sladden från den ena till den andra LNB:n.</p>
 <p>Men jag fick aldrig till någon riktigt bra mottagning på Thor öht, och då är det ju svårt att börja köra DiSEqC. Jag gav upp mina DiSEqC-planer och körde bara med Sirius, vilket funkade riktigt bra (betydligt bättre än kabel-TV:n, där det kunde bli en del frysningar och så).</p>
+
 <p>Nu gjorde jag ettt nytt försök, och den här gången fick jag faktiskt till det! Jag köpte en begagnad DiSEqC-dosa på Tradera för 5 kronor + frakt. Helt OK pris... Köpte lite längre antennkabel, några fler F-kontakter osv.</p>
 <p>Och så försökte jag få till det. Men icke! Det ville sig inte. Jag pratade med en kollega på jobbet om det, och idag var jag till och med och snackade med en kille i en butik där de säljer parabolantenner för att försöka få ordning på det. Det slutade med att vi trodde att det kanske berodde på att parabolen var för liten för att klara av 2 LNB:er.</p>
 <p>Sagt och gjort, när jag kom hem så gick jag ut och mätte storleken på parabolen. Cirka 70x80 cm stor är den, och det är lika stor som Nordenparabolen är. Dvs., det borde väl nog funka... eller?</p>

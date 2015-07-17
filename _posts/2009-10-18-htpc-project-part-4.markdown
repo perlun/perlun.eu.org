@@ -25,6 +25,7 @@ comments: []
 ---
 <p>I found a quite interesting page <a href="http://avenard.com/iptv/MythTV.html">here</a> about IPTV and MythTV.</p>
 <p>This document describes all the steps you need to take to get an IPTV-based provider added to MythTV. There are quite a few steps involved actually, more than what you might think.</p>
+
 <p>At first, I tried hosting the m3u in a local folder. This did not work. But: the good part is that I have an Apache server set up (on a Windows machine, actually) where I could place the file. By putting it there, it worked better: it complained about how the m3u looked. I compared it to the file provided by avenard.com, and found an error. The error was corrected, but it still didn't work; mythtv-setup just crashed in the face of me.</p>
 <p>What I did then was adding -v 10 and then -v 100 to mythtv-setup. With the last setting, it actually started working (!). Very weird. The channel list was fetched, and the channels was added to MythTV.</p>
 <p>The problem now is that when I try to watch TV, it doesn't get any contact with these rtp streams. I don't know if the syntax in the m3u file is correct (I've tried "rtp://233.60.167.1:1111" and this doesn't seem to work too well). I'll ned to RTFM, I think...</p>

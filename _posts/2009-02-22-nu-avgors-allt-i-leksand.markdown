@@ -26,6 +26,7 @@ tags:
 comments: []
 ---
 <p>Har passat på att uppdatera förra blogginlägget med de senaste resultaten. Nu är det bara en match kvar och vilken rysare till hockeyfest MIF Redhawks bjuder upp till! 6-1 mot Troja Ljungby antyder ju en "viss" klasskillnad. Jag tror att publikstödet som Redhawks fick både i kvällens match (men även i de andra matcherna) betytt väldigt mycket för laget; det är klart att det är mycket lättare att spela när man har publikens stöd. Och vilken publik sedan! 12 262 åskådare på en allsvensk hockeymatch, det är verkligen inte fy skam.</p>
+
 <p>Som jämförelse kan nämnas några matcher som nyligen spelats i Elitserien:</p>
 <ul>
 <li>Brynäs-Djurgården (i <a href="http://sv.wikipedia.org/wiki/L%C3%A4kerol_Arena">Läkerol Arena</a> i Gävle): 8 166 åskådare.</li>

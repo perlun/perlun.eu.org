@@ -23,6 +23,7 @@ tags: []
 comments: []
 ---
 <p style="margin-bottom: 0cm;">(Det här är ett försök att analysera vad svenska språket kommer ha för status år 2058. Den är skriven som ett arbete i Svenska B. Det bör noteras att nedanstående spekulation inte nödvändigtvis är min egen åsikt om hur det kommer - eller bör - bli. Men det är en ganska kul fundering. :-)</p>
+
 <p style="margin-bottom: 0cm;"><span style="font-style: normal;"><span>Precis som Tove Jansson skriver i </span></span><em><span>Vad händer sedan? (Språken och historien)</span></em><span style="font-style: normal;"><span> så är ju ett försök till framtidsanalys av ett språks roll och betydelse beroende av yttre parametrar. Att säga ”så blir det” är alltså betydligt mer vågat än att säga ”om samhället utvecklas i riktning x, så kommer språket att utvecklas så att...”. Jag kommer dock ändå våga mig på att göra en ”så blir det”-typ av analys, för skojs skull.</span></span></p>
 <p style="margin-bottom: 0cm; font-style: normal;">Om femtio år kommer det svenska språkets status faktiskt att ha stärkts i Sverige. Sverigedemokraterna (som fick 2,93% av rösterna i valet år 2006) kommer med stor sannolikhet att komma in i Riksdagen, antingen år 2010 eller år 2014. Detta är en väckarklocka för de andra partierna; man inser att frågorna om en sund svensk nationalism är alltför nedtonade i de ”etablerade” riksdagspartierna jämfört med folkopinionen.</p>
 <p style="margin-bottom: 0cm; font-style: normal;">Konsekvenserna av denna trend är bland annat:</p>

@@ -26,6 +26,7 @@ comments: []
 <p>Hi,</p>
 <p>This is my first posting in a series about my new HTPC, which I aim to construct and use for my family's home entertainment needs. Currently, I'm downloading the ISO of <a href="http://www.debian.org">Debian</a> 5.0.3, which means I can take some time to elaborate on the "hows, whys and whats" of this project.</p>
 <p>We start with the "whys". Why build an HTPC, hasn't everyone done this already?</p>
+
 <p>Well, I haven't, so why not? We all need some interesting &amp; fun sparetime project to work on, don't we? Besides, we have some clear needs (I'm tempted to call them "business needs", but hey - this is a private project, not a work thing after all...).</p>
 <p>We currently have a setup that looks like this:</p>
 <ul>

@@ -28,6 +28,7 @@ comments: []
 ---
 <p>I <a href="http://www.expressen.se">Expressen</a> den 8 juli 2009 kunde man bland de åtta första sidorna hitta inte mindre än två olika (!) påhopp på Göran Hägglund. Skickligt! Eller ska vi kalla det utstuderat?</p>
 <p>Vad var det då Hägglund hade sagt som var så förskräckligt? Jo, han attackerade <em>kulturvänstern</em>. Huvaligen! Får man verkligen göra så i (S)verige? Tydligen inte, för reaktionen lät inte vänta på sig från denna tidning. Jag väljer här att börja med att publicera några citat från <a href="http://www.kristdemokraterna.se/GoranHagglund/Tal/090702Almedalen.aspx">Hägglunds tal</a> (dessa publicerades i <em>Ekon som skrämmer</em>-krönikan i en mer förkortad variant).</p>
+
 <blockquote><p>Men inte heller när jag vänder örat mot vänster hör jag mycket annat än svårartade performance-vrål och kultursidornas idisslande av dekonstruktionen av könet, upplösningen av kategorierna, nedmonteringen av jaget och annat hyllande av sådant som i deras avskydda USA allmänt brukar gå under benämningen bullshit.</p></blockquote>
 <p>Lite senare:</p>
 <blockquote><p>Jag har sagt att vi kristdemokrater är verklighetens folk. Med det menar jag inte bara de som är aktiva i partiet utan alla svenskar som lever på ett sätt vänstern inte vill att de ska leva.</p>

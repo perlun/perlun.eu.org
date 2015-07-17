@@ -24,6 +24,7 @@ tags: []
 comments: []
 ---
 <p>I found an interesting "HOWTO"-like document here: <a href="http://www.mythtv.org/wiki/Installing_MythTV_on_Debian_Etch">Installing MythTV on Debian Etch</a>. I can recommend this HOWTO to anyone else interested in getting MythTV set up.</p>
+
 <p>I started off installing mysql-server, as requested. As we all know, this is very convenient and nice with Debian (and its derivatives); you just apt-get install it and get a working configuration set up for you, just like that. In the installation, I was asked which MySQL root password I wanted to use. I chose a good password I use somewhere else (like we all tend to do...).</p>
 <p>I installed ALSA, the way I was instructed to. I set the volume, using the alsamixer tool (the old "aumix" tool I've used previously doesn't seem to work too well with ALSA). Now, how do you test the sound card in text mode? Well, I installed bplay first, but it also seemed to rely on OSS, so I used mpg123 and downloaded an mp3 file from a Windows machine in our network, and tried playing it. At first it wasn't hearable, but it was just the volume that was too low. :-)</p>
 <p>OK, now I'm ready to install X.Org. This is interesting: I already spent some time getting the intelfb driver to work (which it didn't), so if MythTV uses X11 (rather than directfb), this is probably a positive thing from my perspective.</p>
