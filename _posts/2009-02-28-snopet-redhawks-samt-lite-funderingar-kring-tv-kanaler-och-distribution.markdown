@@ -27,8 +27,8 @@ tags:
 comments: []
 ---
 <p>3-2 efter straffar till Leksand... Man kan nog förstå spelarnas frustration över "målet". Ja, det mål som allt kretsade kring i den avslutande straffdramatiken alltså. <a href="http://www.hockeyexpressen.se/Nyheter/1.1481899/boork-om-straffen-domaren-gjorde-ratt">Det här</a> målet alltså. Kollar man på bilden är man nog benägen att säga att det var ett korrekt beslut.</p>
-
 <p>Men tänk er att vara i Redhawks kläder. Man vet att <strong>allt</strong> hänger nu på om man lyckas vinna den här matchen eller ej. Vinna eller försvinna. Liv eller död. En fruktansvärd rysare med andra ord. Leksingen skjuter, domaren viftar "inget mål" med händerna. Man kan pusta ut! Och vet att nu har man chans att avgöra.</p>
+
 <p>Men så efter någon sekund ändrar han sig??? Det är klart att man reagerar. Man är ju helspänn, nerverna är på gränsen för vad de pallar med.</p>
 <p>Jag kan förstå Calle (Söderberg), att han efter det inte kunde leverera, samtidigt som jag kan tycka att han är så rutinerad att han borde kunnat sätta straffen ändå. Men... han är ju trots allt bara en människa, det finns ingen hockeyspelare som sätter <span style="text-decoration: underline;">alla</span> sina straffar.</p>
 <p>Malmö får alltså spela i hockeyallsvenskan i ett år till, och ser man det från den positiva sidan så är det ju faktiskt så att <strong>TV4 Sport</strong> är en billigare kanal än <strong>Canal+ Sport</strong>, så... på det sättet är det ju bra. :-) Vi får sannerligen hoppas att de grönvita "bandygubbarna" åker ner också, så får vi kanske en del intressanta derbyn också till nästa säsong.</p>

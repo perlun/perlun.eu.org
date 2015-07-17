@@ -25,8 +25,8 @@ tags: []
 comments: []
 ---
 <p>Nu tänkte jag bli lite personlig med er här. Vi har ju flyttat till Finland nyligen, till en kommun som heter <a title="Korsholm" href="http://www.korsholm.fi">Korsholm</a> närmare bestämt. På söndag är det kommunalval i hela Finland, så ock i Korsholm.</p>
-
 <p>När det är valtider så brukar det ju delas ut en del reklam och det finska kommunalvalet är inget undantag. Olika partier har delat ut sin reklam de senaste dagarna och idag fick vi ett papper från <a title="MSK" href="http://www.netikka.net/msk">MSK</a> - Mustasaaren Suomenkielisten Kunnalisjärjestö. (ung. "Korsholms Finskspråkiga Kommunförening")</p>
+
 <p>Finland är ju som bekant ett <a href="http://sv.wikipedia.org/wiki/Finlands_spr%C3%A5klag">tvåspråkigt land</a>, med finska och svenska som officiella språk. Detta till trots så delades reklamen från MSK ut enbart på finska. Nåväl, majoriteten i Finland talar väl ändå finska, kan någon som läser detta hävda. Ja, det stämmer - så är dock inte fallet i Korsholm. I Korsholm är de svenskspråkiga i tydlig majoritet - 71% av kommunens invånare är registrerade som svenskspråkiga enligt <a href="http://www.korsholm.fi/sv/document.aspx?DocID=367&amp;MenuID=0&amp;TocID=34">kommunens hemsida</a>.</p>
 <p>Ändå så vill MSK sprida sitt budskap enbart på finska.</p>
 <p>Det bör ju nämnas i rättvisans namn att somliga av de andra partiernas valbudskap var skrivna på enbart svenska. Det kan ju dock på sätt och vis anses motiverat, utifrån att det är majoritetens språk i kommunen. (även om det förstås också är viktigt att minoritetens rätt tillgodoses)</p>
