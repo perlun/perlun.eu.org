@@ -26,8 +26,8 @@ tags: []
 comments: []
 ---
 <p>Hockeysäsongen är igång igen. Ja, faktiskt! Redan nästa vecka spelas <a href="http://sv.wikipedia.org/wiki/Czech_Hockey_Games_2009_%28september%29">Czech Hockey Games</a>. Det är tydligen tidigarelagt på grund av OS i Vancouver i februari. Första matchen mellan Sverige och Ryssland spelas på min födelsedag, så det blir ju en trevlig födelsedagspresent. :-)</p>
-
 <p>Men säg den glädje som varar för evigt. Så här ser tidsschemat för sändningen ut:</p>
+
 <p>SVT1: 17:55-18:00<br />
 SVT2: 18:00-18:15<br />
 SVT1: 18:15-19:00<br />
