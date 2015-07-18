@@ -35,7 +35,11 @@ module Jekyll
 
     def posts_group_by_category(site)
       category_map = {}
-      site.posts.each {|p| p.categories.each {|c| (category_map[c] ||= []) << p } }
+      site.posts.each { |p|
+        p.categories.each { |c|
+          (category_map[c] ||= []) << p
+        }
+      }
       category_map
     end
   end
@@ -55,7 +59,6 @@ module Jekyll
       else
         category = @category
       end
-
 
       if context.registers[:site].config['category_archive'] && context.registers[:site].config['category_archive']['slugify']
         category = Utils.slugify(category)
