@@ -3,7 +3,6 @@ markdown:         redcarpet
 redcarpet:
   extensions:
     - autolink
-pygments:         false
 
 # Permalinks
 permalink:        pretty
