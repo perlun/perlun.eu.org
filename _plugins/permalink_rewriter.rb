@@ -7,13 +7,22 @@ module Jekyll
     def generate(site)
       site.posts.each do |item|
         item.data['permalink'] = '/' + [
-          item.categories,
+          ascii_sanitize(item.categories.join('/')),
           item.date.year,
           item.date.month,
           item.date.day,
           item.slug
         ].join('/')
       end
+    end
+
+    def ascii_sanitize(s)
+      result = s.dup
+      result.gsub! /å/, 'a'
+      result.gsub! /ä/, 'a'
+      result.gsub! /ö/, 'o'
+      result.gsub! ' ', '-'
+      result
     end
   end
 end
