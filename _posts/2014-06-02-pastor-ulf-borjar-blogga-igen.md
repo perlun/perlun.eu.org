@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Pastor Ulf börjar blogga igen"
-categories: blogg
+categories:
+- kristen tro
 ---
 
 Upptäckte en rolig sak från pastor Ulf Ekman nyligen (jo, jag kallar honom fortfarande så även fast han på pappret inte längre är pastor. Hedras den som hedras bör. :) Han har [börjat blogga igen](http://ulfekman.nu/2014/05/27/dags-att-komma-igang-igen). Det tycker jag känns kul! Jag brukade läsa en hel del på hans blogg förut, när han brukade skriva mer regelbundet, men på senare år har det varit väldigt tyst därifrån
