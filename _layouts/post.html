@@ -4,7 +4,8 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-metadata-line">{{ page.date | date_to_string }}</div>
+  <div class="post-metadata-line">{{ page.date | date_to_string }}
+   {% for category in page.categories %} | {{ category}} {% endfor %}</div>
   {{ content }}
 </div>
 

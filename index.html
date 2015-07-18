@@ -12,7 +12,8 @@ title: Home
       </a>
     </h1>
 
-    <div class="post-metadata-line">{{ post.date | date_to_string }}</div>
+    <div class="post-metadata-line">{{ post.date | date_to_string }}
+      {% for category in post.categories %} | {{ category}} {% endfor %}</div>
 
     {{ post.excerpt }}
 
