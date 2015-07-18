@@ -13,7 +13,7 @@ title: Home
     </h1>
 
     <div class="post-metadata-line">{{ post.date | date_to_string }}
-      {% for category in post.categories %} | {{ category}} {% endfor %}</div>
+      {% for category in post.categories %} | <a href="{{ category }}">{{ category}}</a> {% endfor %}</div>
 
     {{ post.excerpt }}
 
