@@ -8,10 +8,10 @@ module Jekyll
 
     def ascii_sanitize(s)
       result = s.dup
-      result.gsub! /å/, 'a'
-      result.gsub! /ä/, 'a'
-      result.gsub! /ö/, 'o'
-      result.gsub! ' ', '-'
+      result.gsub!(/å/, 'a')
+      result.gsub!(/ä/, 'a')
+      result.gsub!(/ö/, 'o')
+      result.gsub!(' ', '-')
       result
     end
   end
