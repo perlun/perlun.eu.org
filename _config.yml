@@ -12,3 +12,6 @@ title:            per.halleluja.nu
 name:             per.halleluja.nu
 paginate:         10
 baseurl:          /
+
+category_archive:
+  slugify:        true
