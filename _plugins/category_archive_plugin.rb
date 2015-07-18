@@ -1,4 +1,5 @@
 # Jekyll Module to create category archive pages
+# Based on code from https://github.com/shigeya/jekyll-category-archive-plugin
 #
 # Shigeya Suzuki, November 2013
 # Copyright notice (MIT License) attached at the end of this file
@@ -18,7 +19,6 @@
 #
 
 module Jekyll
-
   module CategoryArchiveUtil
     def self.archive_base(site)
       site.config['category_archive'] && site.config['category_archive']['path'] || ''
@@ -46,7 +46,6 @@ module Jekyll
 
   # Tag for generating a link to a category archive page
   class CategoryArchiveLinkTag < Liquid::Block
-
     def initialize(tag_name, category, tokens)
       super
       @category = category.split(' ').first || category
@@ -96,29 +95,29 @@ module Jekyll
 {% endfor %}
       EOS
       self.data = {
-          'layout' => @layout,
-          'type' => 'archive',
-          'title' => "Category archive for #{@category}",
-          'posts' => posts,
-          'url' => File.join('/',
-                     CategoryArchiveUtil.archive_base(site),
-                     @category_dir_name, 'index.html')
+        'layout' => @layout,
+        'type' => 'archive',
+        'title' => "Category archive for #{@category}",
+        'posts' => posts,
+        'url' => File.join('/',
+                   CategoryArchiveUtil.archive_base(site),
+                   @category_dir_name, 'index.html')
       }
     end
 
     def render(layouts, site_payload)
       payload = {
-          'page' => self.to_liquid,
-          'paginator' => pager.to_liquid
+        'page' => self.to_liquid,
+        'paginator' => pager.to_liquid
       }.merge(site_payload)
       do_layout(payload, layouts)
     end
 
     def to_liquid(attr = nil)
-      self.data.merge({
-                               'content' => self.content,
-                               'category' => @category
-                           })
+      self.data.merge(
+        'content' => self.content,
+        'category' => @category
+      )
     end
 
     def destination(dest)
