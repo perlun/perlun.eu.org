@@ -8,7 +8,8 @@ layout: default
 
   <div style="margin-top: 0.5cm">
     <ul>
-      {{ content }}
+      {% for post in page.posts %}<li><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a> ({{ post.date | date_to_string }})</li>
+      {% endfor %}
     </ul>
   </div>
 </div>
