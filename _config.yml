@@ -11,3 +11,4 @@ permalink:        pretty
 title:            per.halleluja.nu
 name:             per.halleluja.nu
 paginate:         10
+baseurl:          /
