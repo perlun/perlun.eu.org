@@ -17,7 +17,9 @@ title: Home
 
     {{ post.excerpt }}
 
-    <a href="{{ post.url }}">Läs hela inlägget</a>
+    <a href="{{ post.url }}">Läs hela inlägget</a> |
+
+    <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}/"></span>
   </div>
   {% endfor %}
 </div>
@@ -38,3 +40,16 @@ title: Home
     <span class="pagination-item newer">Nyare</span>
   {% endif %}
 </div>
+
+
+<script type="text/javascript">
+  var disqus_shortname = 'per-halleluja-nu';
+  var disqus_url = 'http://per.halleluja.nu' + document.location.pathname;
+
+  (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
