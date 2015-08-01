@@ -9,3 +9,8 @@
 .post-metadata-line a {
   color: #9a9a9a;
 }
+
+img.emoji {
+  display: inline;
+  margin: 0 0 0.2rem 0;
+}
