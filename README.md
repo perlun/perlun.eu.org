@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/perlun/per.halleluja.nu.svg?branch=master)](https://travis-ci.org/perlun/per.halleluja.nu)
+
 # README
 
 This is the source code for my personal blog (in Swedish). You will find the blog at this URL: http://per.halleluja.nu.
