@@ -2,8 +2,8 @@ module Jekyll
   module Utils
     alias_method :slugify_real, :slugify
 
-    def slugify(string)
-      slugify_real(ascii_sanitize(string))
+    def slugify(string, mode: nil, cased: false)
+      slugify_real(ascii_sanitize(string), mode: mode, cased: cased)
     end
 
     def ascii_sanitize(s)
@@ -22,13 +22,13 @@ module Jekyll
     priority :low
 
     def generate(site)
-      site.posts.each do |item|
+      site.posts.docs.each do |item|
         item.data['permalink'] = '/' + [
-          Utils.ascii_sanitize(item.categories.join('/')),
+          Utils.ascii_sanitize(item.data.fetch('categories').join('/')),
           item.date.year,
           item.date.month,
           item.date.day,
-          item.slug
+          item.data.fetch('slug')
         ].join('/')
       end
     end
