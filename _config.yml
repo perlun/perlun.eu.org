@@ -16,5 +16,8 @@ baseurl:          /
 category_archive:
   slugify:        true
 
+exclude: [vendor]
+
 gems:
   - jemoji
+  - jekyll-paginate
