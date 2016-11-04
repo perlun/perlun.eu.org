@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Guds Ord räcker: del 1"
+title:  "Guds Ord räcker: del 1. Inledning om boken och debatten."
 categories:
 - bokrecensioner
 - kristen tro
