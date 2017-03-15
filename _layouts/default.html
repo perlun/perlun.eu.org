@@ -5,13 +5,31 @@
 
   <body>
 
+  {% if site.lang == "xx" %}
+
+  {{ content }}
+
+  {% else %}
+
     <div class="container content">
       <div class="masthead">
         <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}">{{ site.title }}</a>
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
+
+          {% if site.lang == "sv" %}
           &middot;
-          <small><a href="{{ site.baseurl }}om">Om bloggen</a></small>
+          <small><a href="{{ site.baseurl }}/om">Om bloggen</a></small>
+          &middot;
+          <small><a href="{{ site.baseurl_root }}/">Select language / Välj språk</a></small>
+          {% endif %}
+
+          {% if site.lang == "en" %}
+          &middot;
+          <small><a href="{{ site.baseurl }}/about">About the blog</a></small>
+          &middot;
+          <small><a href="{{ site.baseurl_root }}/">Select language / Välj språk</a></small>
+          {% endif %}
         </h3>
       </div>
 
@@ -23,5 +41,7 @@
         </p>
       </div>
     </div>
+
+    {% endif %}
   </body>
 </html>

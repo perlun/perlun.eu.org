@@ -24,10 +24,9 @@ module Jekyll
     def generate(site)
       site.posts.docs.each do |item|
         item.data['permalink'] = '/' + [
-          Utils.ascii_sanitize(item.data.fetch('categories').join('/')),
           item.date.year,
-          item.date.month,
-          item.date.day,
+          format('%02d', item.date.month),
+          format('%02d', item.date.day),
           item.data.fetch('slug')
         ].join('/')
       end

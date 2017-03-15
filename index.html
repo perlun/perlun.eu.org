@@ -3,21 +3,42 @@ layout: default
 title: Home
 ---
 
+{% if site.lang == "xx" %}
+
+<div class="container content">
+  <div class="masthead landing-page-head">
+    <h3 class="masthead-title">
+      <a href="{{ site.baseurl_root }}/">{{ site.title }}</a>
+    </h3>
+  </div>
+
+  <p>
+    Please select language / Välj språkversion för sidan
+  </p>
+
+  <a href="{{ site.baseurl_root }}/en">English</a>
+  &middot;
+  <a href="{{ site.baseurl_root }}/sv">Svenska</a>
+</div>
+
+{% else %}
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
 
     <div class="post-metadata-line">{{ post.date | date_to_string }}
-      {% for category in post.categories %} | <a href="{{ category | slugify }}">{{ category }}</a> {% endfor %}</div>
+      {% for category in post.categories %} | <a href="{{ category | slugify }}">{{ category }}</a> {% endfor %}
+    </div>
 
     {{ post.excerpt }}
 
-    <a href="{{ post.url }}">Läs hela inlägget</a> |
+    <a href="{{ site.baseurl }}{{ post.url }}">{%t global.read_full_post %}</a> |
 
     <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}/"></span>
   </div>
@@ -26,18 +47,18 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Äldre</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">{%t global.older %}</a>
   {% else %}
-    <span class="pagination-item older">Äldre</span>
+    <span class="pagination-item older">{%t global.older %}</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}">{%t global.newer %}</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Nyare</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">{%t global.newer %}</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Nyare</span>
+    <span class="pagination-item newer">{%t global.newer %}</span>
   {% endif %}
 </div>
 
@@ -53,3 +74,5 @@ title: Home
       (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
   }());
 </script>
+
+{% endif %}

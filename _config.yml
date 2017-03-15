@@ -4,20 +4,23 @@ redcarpet:
   extensions:
     - autolink
 
-# Permalinks
+baseurl:          ""
 permalink:        pretty
 
 # Setup
 title:            per.halleluja.nu
 name:             per.halleluja.nu
 paginate:         10
-baseurl:          /
 
 category_archive:
   slugify:        true
 
 exclude: [vendor]
 
+languages: ["xx", "sv", "en"]
+exclude_from_localizations: ["images", "public"]
+
 gems:
-  - jemoji
+  - jekyll-multiple-languages-plugin
   - jekyll-paginate
+  - jemoji
