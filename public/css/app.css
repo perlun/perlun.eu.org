@@ -1,3 +1,7 @@
+.container {
+  max-width: 58rem;
+}
+
 /* Meta data line below post title */
 .post-metadata-line {
   display: block;
