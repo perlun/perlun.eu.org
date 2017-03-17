@@ -162,4 +162,4 @@ private static IList<Transaction> GetTransactions(ExcelRange cells, IEnumerable<
 
 The `var (startRow, startColumn) = start` is the tuple deconstruction. Again, all of this happens at compile time so the `var` variables will have the proper types, you get compile-time checking if you use these variables incorrectly, etc. Just like you could expect in a statically typed, compiled language like C#.
 
-Alright, that's all of me for now - see you in another blog post shortly.
+Alright, that's all of me for this time - hope to see you soon again in some other interesting topic.

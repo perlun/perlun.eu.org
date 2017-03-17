@@ -4,7 +4,7 @@ layout: default
 
 # Om bloggen
 
-![Per Lundberg](perlun.png)
+![Per Lundberg](/images/perlun.png)
 
 Denna blogg drivs av Per Lundberg. Som bloggmotor används [Jekyll](http://jekyllrb.com), vilken jag kan rekommendera varmt.
 
