@@ -1,1 +1,1 @@
-bundle exec jekyll build && rsync --delete -gloprtv _site/ pi:/var/www/per.halleluja.nu
+bundle exec jekyll build && rsync --delete -gloprtv _site/ pi2:/var/www/perlun.tk
