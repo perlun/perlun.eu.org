@@ -52,7 +52,7 @@ private static MethodInfo GetMethodForSubcommand(TypeInfo commandTypeInfo, strin
       ).SingleOrDefault();
 ```
 
-It also works for properties (remember that properties is basically just syntactic sugar for methods in C#/.NET):
+It also works for properties (remember that properties is basically just syntactic sugar for methods in C#/.NET). Note that the property syntax here might look a bit unfamiliar; it uses something called "[Expression bodies on property-like function members](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodies-on-property-like-function-members)" which is a way to declare a get-only property with a method body.
 
 ```csharp
 private DatabaseInserter DatabaseInserter => new DatabaseInserter { ConnectionString = ConnectionString };
