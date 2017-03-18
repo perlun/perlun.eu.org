@@ -6,7 +6,9 @@ layout: default
 
 ![Per Lundberg](/images/perlun.png)
 
-Denna blogg drivs av Per Lundberg. Som bloggmotor används [Jekyll](http://jekyllrb.com), vilken jag kan rekommendera varmt.
+På min blogg skriver jag om olika saker jag tycker är intressanta, ofta relaterad till _teologi_ eller _teknologi_, eller en blandning där emellan. :wink:
+
+Jag som skriver heter Per Lundberg. Som bloggmotor används [Jekyll](http://jekyllrb.com), vilken jag tycker funkar mycket bra och kan rekommendera.
 
 Du kan även komma i kontakt med mig på följande vis:
 
