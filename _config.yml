@@ -8,8 +8,8 @@ baseurl:          ""
 permalink:        pretty
 
 # Setup
-title:            per.halleluja.nu
-name:             per.halleluja.nu
+title:            perlun.tk
+name:             perlun.tk
 paginate:         10
 
 category_archive:
