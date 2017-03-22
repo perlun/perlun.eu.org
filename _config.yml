@@ -3,13 +3,14 @@ markdown:         redcarpet
 redcarpet:
   extensions:
     - autolink
+    - strikethrough
 
 baseurl:          ""
 permalink:        pretty
 
 # Setup
-title:            perlun.tk
-name:             perlun.tk
+title:            perlun.eu.org
+name:             perlun.eu.org
 paginate:         10
 
 category_archive:
