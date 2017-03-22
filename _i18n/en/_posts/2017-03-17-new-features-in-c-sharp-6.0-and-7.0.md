@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New features in C# 6 and 7"
+title:  "New features in C# 6.0 and 7.0"
 categories:
 - programming
 - dotnet
