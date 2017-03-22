@@ -18,7 +18,7 @@ This has clearly changed to the better, and I believe that [Satya Nadella](https
 - The open source release of the .NET Framework ([.NET Core](https://www.microsoft.com/net/download/core)), opening up the .NET development to a much larger audience of potential contributors, and also making it cross-platform (Windows, macOS, Linux), making it much more generally useful.
 - [Windows Subsystem for Linux (WSL)](https://msdn.microsoft.com/commandline/wsl/about), making it possible to run an unmodified Ubuntu on top of Windows 10.
 
-I feel very positive about this, and it has been a part of making me interested in what Microsoft is up to again. After all, I have been using macOS since 2011 now, so for me, the cross-platform part is a rather important aspect of this. I have played around a bit with their latest programmer tools (.NET Core 1.x on macOS and Linux, [Visual Studio Code](https://code.visualstudio.com/) and thus far, I am very pleased with them.
+I feel very positive about this, and it has been a part of making me interested in what Microsoft is up to again. After all, I have been using macOS since 2011 now, so for me, the cross-platform part is a rather important aspect of this. I have played around a bit with their latest programmer tools (.NET Core 1.x on macOS and Linux, [Visual Studio Code](https://code.visualstudio.com/)) and thus far, I am very pleased with them.
 
 Anyway, after this long-winded introduction, let me share some of the things I appreciate in C# 6.0 and 7.0
 
@@ -142,7 +142,7 @@ Being able to return multiple values from a method - nice, huh? Again, this is s
 
 Tuples are nice, but without the next feature, it wouldn't be as useful. Namely, _tuple deconstruction_.
 
-## Typle deconstruction
+## Tuple deconstruction
 
 So, you have a parameter which consists of a tuple with multiple values (`start` and `end`) below. But how do you use these values?
 
