@@ -1,6 +1,6 @@
-.highlight pre { background-color: #49483e }
+.highlight pre { background-color: #49483e; color: #a6e22e }
 .highlight .c { color: #75715e } /* Comment */
-.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .err { color: #f8f8f2 } /* Error - C# 6 syntax is mistakenly treated as this, so need to re-style to avoid looking goofy */
 .highlight .k { color: #66d9ef } /* Keyword */
 .highlight .l { color: #ae81ff } /* Literal */
 .highlight .n { color: #f8f8f2 } /* Name */
