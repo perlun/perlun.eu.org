@@ -3,7 +3,7 @@ layout: post
 title:  "TypeScript: Making web programming fun again"
 categories:
 - programming
-- rust
+- typescript
 ---
 
 In this blog post I will share a few thoughts on why I feel [TypeScript](http://www.typescriptlang.org) is a very valuable addition to the JavaScript/web ecosystem, and some of my initial experiences and feelings around it.
