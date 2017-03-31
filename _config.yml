@@ -4,6 +4,7 @@ redcarpet:
   extensions:
     - autolink
     - strikethrough
+highlighter:      pygments
 
 baseurl:          ""
 permalink:        pretty
