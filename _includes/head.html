@@ -33,7 +33,9 @@
   {% else %}
     <meta name="twitter:title" content="{{ site.title }}">
   {% endif %}
-  {% if page.excerpt %}
+  {% if page.excerpt_plain %}
+    <meta name="twitter:description" content="{{ page.excerpt_plain }}">
+  {% else if page.excerpt %}
     <meta name="twitter:description" content="{{ page.excerpt }}">
   {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
