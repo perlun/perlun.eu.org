@@ -22,3 +22,8 @@ img.emoji {
 .landing-page-head {
   margin-bottom: 1rem;
 }
+
+pre {
+  white-space: pre;
+  overflow-x: scroll;
+}
