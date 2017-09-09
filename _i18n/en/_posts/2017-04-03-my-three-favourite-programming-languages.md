@@ -43,9 +43,9 @@ Hence, I would like to add one or more of the following languages to the list ab
 
 These are languages that I have all worked with (either professionally or in spare time projects), but would prefer not to work with any more, if possible. Having said that, I still acknowledge their place and it all depends; if I am asked to do a _small change_ to an existing Perl program for example, I will probably not start rewriting the whole thing in "some other language". However, if I'm asked to take over the long-term maintenance of an application, that's a different story and I'm much more likely to be wanting to rewrite at least parts of it in a better, more sustainable language, if possible.
 
-- _C_. Feels too old and inconvenient to use, compared to more modern languages like Rust. Too easy to write unsafe, insecure code that can have serious security implications on the wild Internet.
+- _C_. Feels too old and inconvenient to use, compared to more modern languages like Rust. Too easy to write unsafe, insecure code that can have serious security implications on the wild Internet. Still, it has its place, but there are often better alternatives these days.
 
-- _C++_. Too bloated and huge. Yes, _useful_ since a large part of the world's software is written in it (WebKit, Mozilla Firefox, Window...), and of course I could write a few lines of C++ here and there if _needed_. Still, I probably wouldn't really enjoy it as much as writing code in my favourite languages.
+- _C++_. Too bloated and huge. Yes, _useful_ since a large part of the world's software is written in it (WebKit, Mozilla Firefox, Microsoft Windows...), and of course I could write a few lines of C++ here and there if _needed_. Still, I probably wouldn't really enjoy it as much as writing code in one of my favourite languages.
 
 - _Java_. Java lacks a lot of the nice things that has happened in C# for the last ten years that improve developer ergonomics and code readability. Yes, it's slowly improving, but the improvement process is dead slow. Let this VM die a painful death and rest in pieces. :laughing: Well, to be honest, the _VM_ is quite OK, it's the Java language that really deserves to be replaced with better alternatives.
 
