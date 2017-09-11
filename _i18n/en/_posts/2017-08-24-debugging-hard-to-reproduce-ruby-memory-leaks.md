@@ -955,6 +955,8 @@ The six left-most parts of the graph are before I bumped the Ruby version to 2.5
 
 If you read all of this, you remember me mentioning `bson_ext` as a potential source of leakage. I don't think it is, not until proven otherwise, so I will probably put it back into my `Gemfile` shortly after this. CloudWatch will email me if it turns out to be an incorrect assumption. :smile:
 
+I ended up downgrading to Ruby 2.3.4 for now, but I also asked the Ruby maintainers to release a 2.4.2 version if possible. Actually, when graphing the memory usage over time, I am not 100% sure that all leaks are gone yet (memory usage still seems to increase a bit over time), but at least _this_ very real bug has been fixed, which is good... Time will tell, and the automated monitoring emails I get will show whether we have something more that remains to be investigated or not.
+
 ## Conclusions
 
 -   Never rule out anything: compiler bugs, runtime bugs, etc. I have seen [crazy things](https://stackoverflow.com/questions/29086636/gcc-x86-inline-asm-how-do-you-tell-gcc-that-inline-assembly-section-will-modify) sometimes, for example when different versions of `gcc` caused input parameters to inline assembly code to be placed as stack parameters instead of in registers (as used to be the case with a previous version, using the same source code). Since the inline assembly code was itself pushing stuff on the stack before using the parameters provided, the stack pointer would have a different value than the compiler assumed => broken code.
