@@ -414,9 +414,9 @@ Hmm, that made it _work_! I think I'm on to something here... Let's uncomment th
 
 (I felt more and more like a private detective rather than a software engineer at this very point... hunting my suspect, trying to nail him or her down with whatever measure needed...)
 
-I also noted something else very interesting at this point. The system startup had now turned _instantaneous_. It used to take quite a long time to start up chaos, it felt like there was a timeout somewhere, which would eventually be firing. This timeout was not supposedly gone, probably because I had commented out the specific line that was causing it.
+I also noted something else very interesting at this point. The system startup had now turned _instantaneous_. It used to take quite a long time to start up chaos, it felt like there was a timeout somewhere, which would eventually be firing. This timeout was now supposedly gone, probably because I had commented out the specific line that was causing it.
 
-Something very important at this time was to avoid making too many changes at the same time. Instead, try changin a few lines, recompile and reboot the VM, verify if it works/doesn't work, and then back to zero. Over and over again. It you make too big a change at once, you will have a much harder time knowing which part of it actually caused the change in behavior, _if_ and _when_ the behavior changes.
+Something very important at this time was to avoid making too many changes at the same time. Instead, try changing a few lines, recompile and reboot the VM, verify if it works/doesn't work, and then back to zero. Over and over again. It you make too big a change at once, you will have a much harder time knowing which part of it actually caused the change in behavior, _if_ and _when_ the behavior changes.
 
 Then I realized it, while looking at the code.
 
@@ -477,3 +477,5 @@ In other words: instead of growing the stack, we have hardwired a crash screen h
 This is the time when you start making use of `git blame` and `git log`. I went back all the way to 2007, which is the time when this code was imported to CVS. (We _used_ to have it in CVS earlier as well, but somehow the CVS tree was lost or bad or whatever, so we did a clean import from a `.tar.bz2` dump instead.) It looked like this in the very first commit.
 
 I fixed it in [revision 3293f21](https://github.com/chaos4ever/chaos/commit/3293f21554332ce4d445f7f2c5538b670d7a3708) and all was fine, right away. My problem was solved, and it felt really good to have found the root cause here. Yay!
+
+(How about the interesting detail mentioned, where system startup was suddenly much faster - what was the reason for that? Well, sorry to disappoint the reader, but I did not investigate this further, since I was focusing on the stack overflow error for now. Eventually, I will definitely check that part out as well, since the slowness of starting the system _is_ indeed a bit annoying right now. But, one thing at a time. :smile:)
