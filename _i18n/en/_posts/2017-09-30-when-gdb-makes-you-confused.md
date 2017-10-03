@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "When GDB makes you confused"
+title:  "chaos: When GDB makes you confused"
 categories:
 - programming
 ---
 
-Sometimes, you run into weird errors that takes ages to debug. Like the one that happened to me today - a strange "stack overflow", for code that shouldn't cause any problems at first glance.
+Sometimes when working on chaos, you run into weird errors that takes ages to debug. Like the one that happened to me today - a strange "stack overflow", for code that shouldn't cause any problems at first glance.
 
 Here is the new code I was adding:
 
