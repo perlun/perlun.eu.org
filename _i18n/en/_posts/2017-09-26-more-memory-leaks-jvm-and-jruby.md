@@ -227,7 +227,7 @@ $ cat real_class_cached_name.csv | sort | uniq -c | sort -n -r
    1 Array,
 ```
 
-Alright - I think we have the root cause found here. [log4r](https://github.com/colbygk/log4r) seems to be used in our application and/or framework in such a way that it creates a huge number of classes, eventually bringing the system down on its knees.
+Alright - I think we have the root cause found here. [log4r](https://github.com/colbygk/log4r) seems to be used in our application and/or framework in such a way that it creates a huge number of classes, eventually bringing the system down on its knees. I don't think is really `log4r`'s fault; we use it in a way that it was not designed for, causing huge amounts of memory leaking.
 
 But this was strange. I know that we did, a few months ago, move away from `log4r` to use our home-weaved [logging_library](https://github.com/ecraft/logging_library) instead. It does _not_ use `log4r` under the hood, since `log4r` is more-or-less abandoned upstream. I digged into the `Gemfile.lock` of my application and looked to see where the `log4r` dependency was coming from.
 
