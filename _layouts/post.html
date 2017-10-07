@@ -6,8 +6,9 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
 
   <div class="post-metadata-line">{{ page.date | date_to_string }}
-   {% for category in page.categories %} | <a href="{{ site.baseurl }}/{{ category | slugify }}">{{ category}}</a> {% endfor %}</div>
-  {{ content }}
+   {% for category in page.categories %} | <a href="{{ site.baseurl }}/{{ category | slugify }}">{{ category}}</a> {% endfor %} | {% include read_time.html %}</div>
+
+   {{ content }}
 </div>
 
 <div id="disqus_thread"></div>
