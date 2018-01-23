@@ -55,7 +55,7 @@ I then moved it very close to the transmitter which gave me this:
 
 Now this is interesting! The results are actually _much worse_ here. That's not really very strange at all in fact, since I now plugged the "receiver" (Powerline + WiFi) very close to some of the utility equipment heating up the house etc., likely with a lot of electrical interference. I think I'll move both the _transmitter_ and _receiver_ now to different outlets, to see what the "practical maximum" we can get with this equipment actually is.
 
-Said and done, here are the results. Both the transmitter and receiver were in the hosue during this test:
+Said and done, here are the results. Both the transmitter and receiver were in the house during this test:
 
 ![Speedtest with both transmitter and receiver inside house](
 /images/2017-10-22-powerline-network-to-the-playhouse-in-house.png)
