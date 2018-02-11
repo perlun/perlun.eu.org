@@ -1,6 +1,55 @@
 ---
 layout: default
 ---
+
+{% if page.category == "programming" %}
+<h2>Programming</h2>
+<p>
+  It should come as no big surprise if you've been reading this blog that
+  a big passion in my life is <em>programming</em>. It has been a hobby
+  of mine since sometime in the nineties (probably 1994, 95 or sometime
+  around this - my oldest "proof" of something I wrote is the small BBS
+  intro <code>flower.com</code> which is dated September 1996) and my
+  primary way to make my living since 1999, with very few exceptions.
+</p>
+
+<p>
+  During these years, I've produced a number of different projects on my spare
+  time, of various size and grade of "seriosity". Here is a list of some of
+  these projects. I'm hoping to add more links to this list over time, adding
+  binaries and sometimes the source code (in the cases where it hasn't gotten
+  lost over the years.) Many have been solo projects, others have been
+  cooperative projects with my brother Johannes Ridderstedt, who has been an
+  <em>invaluable</em> source of help and inspiration when learning about
+  computer hardware, software and programming. This list wouldn't be what
+  it is without him - <em>thanks bro</em>, I owe you a lot! :heart:
+</p>
+
+<ul>
+  <li>1996: flower.com (BBS intro, written in x86 assembly for MS-DOS.)</li>
+  <li>1997: Gameland intro (original probably in C, for MS-DOS. See further
+    down for intro about the later rewrite.
+  <li>1998: rot13 TSR (x86 assembly for MS-DOS)</li>
+  <li>1999: Cybermario, an unfinished Mario-spinoff game (C++ for MS-DOS)</li>
+  <li>1999: Tribes, an unfinished Civilization clone (C, targetting GTK/Linux)</li>
+  <li>1999: <a href="http://chaosdev.io">chaos</a>, an operating system
+    (C &amp; x86 assembly)</li>
+  <li>2004: iZ, a CMS written using PHP &amp; MySQL</li>
+  <li>2008: <a href="https://github.com/perlun/cocos">cocos</a>, a simple
+    operating system-like toy for x86-64. (C &amp; x86 assembly)</li>
+  <li>2013: Billigaste Matkassen, a shopping price analyzing helper. Web
+    app written using JavaScript &amp; jQuery with backend in Ruby
+    with Redis.</li>
+  <li>2013: Imported the chaos source code to
+    <a href="https://github.com/chaos4ever/chaos">GitHub</a> and started
+    looking into making it compile &amp; run again on modern <code>gcc</code>
+    versions. A lot of the existing functionality is now working again as of
+    2018.</li>
+  <li>2018: <a href="gameland">Gameland rewrite</a>, this time in Rust,
+    targetting WebAssembly</a>.)</li>
+</ul>
+{% endif %}
+
 <div class="category-archive">
   <div>
     <span class="title">{% t global.posts_in_category %} "{{ page.category }}":</span>
