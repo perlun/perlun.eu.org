@@ -8,7 +8,8 @@ layout: default
 <script src="dist/webaudio-mod-player/player.js" type="text/javascript"></script>
 <script src="dist/webaudio-mod-player/pt.js" type="text/javascript"></script>
 
-## Gameland intro - New and old version
+## Gameland intro
+### New version
 
 My nice brother Johannes Ridderstedt sent me some old files a few weeks ago
 (in late 2017), stuff that he had preserved from an age-old computer of ours.
@@ -29,14 +30,15 @@ technology_? And perhaps learn something new in the process of doing so? I
 started playing around with this, and spent maybe 5 evenings or so, a little
 time here and there trying to get some progress on various areas.
 
-Here is the result. Click the button to start the demo (it will switch to
-fullscreen.) Only tested in Firefox, Chrome and Safari on desktop; the
-full-screen stuff isn't fully standardized yet so it uses prefixed,
-vendor-specific JavaScript calls.
+Here is the result:
+
+<input type="image" src="gameland.png" alt="Gameland" id="run-wasm">
+
+Click on the image above to start the demo (it will switch to fullscreen.) Only
+tested in Firefox, Chrome and Safari on desktop; the full-screen stuff isn't
+fully standardized yet so it uses prefixed, vendor-specific JavaScript calls.
 
 <canvas id="screen" width="320" height="200" style="border: black 1px solid; display: none;"></canvas>
-
-<input type="button" id="run-wasm" value="Start">
 
 The code is available on [GitHub](https://github.com/perlun/gameland-wasm) if
 you are interested in the full details on how it works.
