@@ -87,7 +87,7 @@ root@microservice-jruby-xxxxxxxxxx:/# ps -ax -o pid,rss | grep 14302
 14302 552424
  ```
 
-I then gave it some time to run, and got back to see how it was doing. I also discussed with a colleague and heard that Eclipse Memory Analyzer is a quite decent tool for debugging these issues (it was also mentioned in one of the blog posts linked below.)
+I then gave it some time to run, and got back to see how it was doing. I also discussed with a colleague and heard that [Eclipse Memory Analyzer](https://www.eclipse.org/mat/) is a quite decent tool for debugging these issues (it was also mentioned in one of the blog posts linked below.)
 
 This is what it looked like after a few days:
 
