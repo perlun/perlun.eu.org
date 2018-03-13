@@ -3,7 +3,7 @@
 //
 // Heavily inspired by https://www.hellorust.com/demos/feistel/index.html
 
-fetch("gameland.wasm", {cache: "no-cache"}).then(response =>
+fetch('gameland.wasm', { cache: 'no-cache' }).then(response =>
   response.arrayBuffer()
 ).then(bytes =>
   WebAssembly.instantiate(bytes, {})
@@ -24,7 +24,7 @@ fetch("gameland.wasm", {cache: "no-cache"}).then(response =>
   var pointer = module.alloc(byteSize);
   var buffer = new Uint8Array(mod.exports.memory.buffer, pointer, byteSize);
 
-  var button = document.getElementById("run-wasm");
+  var button = document.getElementById('run-wasm');
   var canvas = document.getElementById('screen');
 
   if (canvas.getContext) {
@@ -48,7 +48,7 @@ fetch("gameland.wasm", {cache: "no-cache"}).then(response =>
       if (frame != 65536) {
         window.requestAnimationFrame(step);
       } else {
-        button.innerText = "Restart";
+        button.innerText = 'Restart';
         running = false;
       }
     }
@@ -75,31 +75,31 @@ fetch("gameland.wasm", {cache: "no-cache"}).then(response =>
       window.module.stop();
     }
 
-    function exitHandler() {
+    function fullscreenChanged() {
       if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
         stopDemo();
+
+        document.removeEventListener('webkitfullscreenchange', fullscreenChanged, false);
+        document.removeEventListener('mozfullscreenchange', fullscreenChanged, false);
+        document.removeEventListener('fullscreenchange', fullscreenChanged, false);
+        document.removeEventListener('MSFullscreenChange', fullscreenChanged, false);
       }
       else {
         clearCanvasAndRestart();
+        window.module.play();
       }
     }
 
+    // Imperative code starts here.
     button.addEventListener('click', function(e) {
       if (running) {
         stopDemo();
       } else {
-        window.module = new Modplayer();
-        window.module.setrepeat(true);
-        window.module.onReady = () => {
-          window.module.play();
-        }
-        window.module.load('music.mod');
-
         // FIXME: use fscreen instead of this mess.
-        document.addEventListener('webkitfullscreenchange', exitHandler, false);
-        document.addEventListener('mozfullscreenchange', exitHandler, false);
-        document.addEventListener('fullscreenchange', exitHandler, false);
-        document.addEventListener('MSFullscreenChange', exitHandler, false);
+        document.addEventListener('webkitfullscreenchange', fullscreenChanged, false);
+        document.addEventListener('mozfullscreenchange', fullscreenChanged, false);
+        document.addEventListener('fullscreenchange', fullscreenChanged, false);
+        document.addEventListener('MSFullscreenChange', fullscreenChanged, false);
 
         var elem = document.getElementById('screen');
 
@@ -111,5 +111,12 @@ fetch("gameland.wasm", {cache: "no-cache"}).then(response =>
         }
       }
     });
+
+    window.module = new Modplayer();
+    window.module.setrepeat(true);
+    window.module.onReady = () => {
+      document.getElementById('run-wasm').disabled = false;
+    }
+    window.module.load('music.mod');
   }
 });
