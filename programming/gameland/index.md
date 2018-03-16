@@ -9,7 +9,7 @@ layout: default
 <script src="dist/webaudio-mod-player/pt.js" type="text/javascript"></script>
 
 ## Gameland intro
-### New version
+### Background
 
 My nice brother Johannes Ridderstedt sent me some old files a few weeks ago
 (in late 2017), stuff that he had preserved from an age-old computer of ours.
@@ -17,6 +17,8 @@ My nice brother Johannes Ridderstedt sent me some old files a few weeks ago
 One of these was the file named `gameland.zip` (not published yet, but I might
 put it up here some day.) I managed to get this running, and liked what I saw
 (you'll find the YouTube link to it further down on this page.)
+
+### Rewriting it in Rust for WebAssembly
 
 Around this time I was reading a bit about [WebAssembly](WebAssembly) which I
 think will redefine and help reshape the web as we see it today. I was also
