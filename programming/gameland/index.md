@@ -43,6 +43,14 @@ fully standardized yet so it uses prefixed, vendor-specific JavaScript calls.
 The code is available on [GitHub](https://github.com/perlun/gameland-wasm) if
 you are interested in the full details on how it works.
 
+**Update 2018-03-16**: I made some adjustments to make it closer to the
+original; faster scrolling, more blinking. I also considered switching to [chiptune2](https://github.com/deskjet/chiptune2.js)
+as the `.mod` player but after implementing the change I benchmarked the two
+versions and concluded that the CPU usage was basically the same, so it wasn't
+quite worth it. `libopenmpt` (the C library used by chiptune2.js under the
+hood) has arguably a higher quality mixing code, but my usage of it is not
+100% working so... I'm leaving it like this for now.
+
 ### The old version
 
 Finally, for reference, here is the output from running the original intro and
