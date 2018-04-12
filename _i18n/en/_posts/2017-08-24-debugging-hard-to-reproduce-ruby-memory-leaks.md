@@ -25,7 +25,7 @@ So, I set up a workaround for that in the affected application, but unfortunatel
 
 ## Trying to figure out whether the leak is in Ruby code or a C extension
 
-An important piece of information I learned when analyzing the Mongo leak mentioned earlier in this post was ObjectSpace tracing (via [Sam Safrron's blog post](https://samsaffron.com/archive/2015/03/31/debugging-memory-leaks-in-ruby)) and heap dumping in Ruby. I added a `.rb` resource in my application that would start the tracing:
+An important piece of information I learned when analyzing the Mongo leak mentioned earlier in this post was ObjectSpace tracing (via [Sam Saffron's blog post](https://samsaffron.com/archive/2015/03/31/debugging-memory-leaks-in-ruby)) and heap dumping in Ruby. I added a `.rb` resource in my application that would start the tracing:
 
 
 ```ruby
