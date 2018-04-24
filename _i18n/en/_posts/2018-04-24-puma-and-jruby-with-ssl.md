@@ -19,7 +19,9 @@ Here's what I did, after realizing "I cannot get this working" (that's when
 I started writing down the various steps I was trying now, both for myself
 and for others.)
 
-- I downloaded the sample keystore from https://github.com/puma/puma/blob/429d17bca11f8d22dcc1434c9f6ac826a06fa836/examples/puma/keystore.jks, password blahblah. It worked fine.
+- I downloaded the sample keystore from
+  https://github.com/puma/puma/blob/429d17bca11f8d22dcc1434c9f6ac826a06fa836/examples/puma/keystore.jks,
+  password blahblah. It worked fine.
 - `keytool` gave a warning about this certificate:
 
 ```
@@ -32,7 +34,8 @@ format using "keytool -importkeystore -srckeystore /Users/plundberg/Downloads/ke
 - I converted it to PKCS12 format:
 
 ```
-keytool -importkeystore \
+keytool
+    -importkeystore \
     -srckeystore /Users/plundberg/Downloads/keystore.jks \
     -destkeystore ~/.ssl/keystore \
     -deststoretype pkcs12
@@ -72,30 +75,34 @@ Version: 3
 
 - I then imported my own cert:
 
-  ```
-  $ keytool -noprompt \
+```
+$ keytool \
+    -noprompt \
     -importcert \
     -keystore ~/.ssl/keystore \
     -file ~/.ssl/localhost/certificate.crt \
     -alias mydomain
-  ```
+```
 
 - Did not work; curl output an error when making a request.
 - Imported CA certificate also:
 
-  ```
-  $ keytool -noprompt \
+```
+$ keytool \
+    -noprompt \
     -importcert \
     -keystore ~/.ssl/keystore \
     -file ~/.ssl/ca.crt \
     -alias root
-  ```
+```
 
 - It still failed in the same way.
 - I then tried "the nginx approach", by concatenating the cert with root
   cert before import:
 
-  cat ~/.ssl/localhost/certificate.crt ~/.ssl/ca.crt  > foo.crt
+```
+$ cat ~/.ssl/localhost/certificate.crt ~/.ssl/ca.crt  > foo.crt
+```
 
 - Re-imported certificate: `keytool -noprompt -importcert -keystore ~/.ssl/keystore -file foo.crt -alias mydomain`
 
@@ -232,7 +239,8 @@ Now, we already know that we can import the (trusted CA-signed) certificate
 like this:
 
 ```
-$ keytool -noprompt \
+$ keytool \
+    -noprompt \
     -importcert \
     -keystore ~/.ssl/keystore \
     -file ~/.ssl/localhost/certificate.crt \
@@ -249,7 +257,8 @@ uncle Google about it, and found [this SO
 thread](https://stackoverflow.com/a/8224863/227779)
 
 ```
-$ openssl pkcs12 \
+$ openssl \
+    pkcs12 \
     -export \
     -in ~/.ssl/localhost/certificate.crt \
     -inkey ~/.ssl/localhost/private-key.key \
@@ -275,13 +284,14 @@ keytool error: java.lang.NullPointerException: invalid null input
 
 
 ```shell
-$ keytool -importkeystore \
-        -deststorepass blahblah \
-        -destkeystore ~/.ssl/keystore \
-        -srckeystore ~/.ssl/localhost.p12 \
-        -srcstoretype PKCS12 \
-        -srcstorepass temp \
-        -alias localhost
+$ keytool \
+    -importkeystore \
+    -deststorepass blahblah \
+    -destkeystore ~/.ssl/keystore \
+    -srckeystore ~/.ssl/localhost.p12 \
+    -srcstoretype PKCS12 \
+    -srcstorepass temp \
+    -alias localhost
 ```
 
 This gave me a warning about using the JKS keystore format, so I wiped the
@@ -289,14 +299,15 @@ keystore and re-ran the command with the added `-deststoretype pkcs12`
 parameter. Like this:
 
 ```shell
-$ keytool -importkeystore \
-        -deststorepass blahblah \
-        -destkeystore ~/.ssl/keystore \
-        -deststoretype pkcs12 \
-        -srckeystore ~/.ssl/localhost.p12 \
-        -srcstoretype PKCS12 \
-        -srcstorepass temp \
-        -alias localhost
+$ keytool \
+    -importkeystore \
+    -deststorepass blahblah \
+    -destkeystore ~/.ssl/keystore \
+    -deststoretype pkcs12 \
+    -srckeystore ~/.ssl/localhost.p12 \
+    -srcstoretype PKCS12 \
+    -srcstorepass temp \
+    -alias localhost
 ```
 
 That gave me an error, so I decided to go with the JKS format for now:
@@ -342,7 +353,8 @@ again and concluded that for things to work, the "key password" should be
 the same as the "keystore password". I used [this SO answer](https://stackoverflow.com/a/19532133/227779) to verify this, i.e.:
 
 ```
-$ keytool -keypasswd \
+$ keytool \
+    -keypasswd \
     -new changeit \
     -keystore ~/.ssl/keystore \
     -storepass blahblah \
@@ -354,7 +366,8 @@ keytool error: java.security.UnrecoverableKeyException: Cannot recover key
 Ah, now I get it! When I converted the certificate and key to PKCS12 format, I entered a key and _that key_ was now being used for the key.
 
 ```
-$ keytool -keypasswd \
+$ keytool \
+    -keypasswd \
     -new changeit \
     -keystore ~/.ssl/keystore \
     -storepass blahblah \
