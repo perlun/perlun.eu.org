@@ -24,7 +24,7 @@ and for others.)
   password blahblah. It worked fine.
 - `keytool` gave a warning about this certificate:
 
-```
+```shell
 Warning:
 The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard
 format using "keytool -importkeystore -srckeystore /Users/plundberg/Downloads/keystore.jks -destkeystore
@@ -33,7 +33,7 @@ format using "keytool -importkeystore -srckeystore /Users/plundberg/Downloads/ke
 
 - I converted it to PKCS12 format:
 
-```
+```shell
 keytool
     -importkeystore \
     -srckeystore /Users/plundberg/Downloads/keystore.jks \
@@ -44,7 +44,7 @@ keytool
   It still worked fine.
 - Keystore looked like this:
 
-```
+```shell
 $ keytool -list -v -keystore ~/.ssl/keystore
 Enter keystore password:
 Keystore type: PKCS12
@@ -75,7 +75,7 @@ Version: 3
 
 - I then imported my own cert:
 
-```
+```shell
 $ keytool \
     -noprompt \
     -importcert \
@@ -87,7 +87,7 @@ $ keytool \
 - Did not work; curl output an error when making a request.
 - Imported CA certificate also:
 
-```
+```shell
 $ keytool \
     -noprompt \
     -importcert \
@@ -100,7 +100,7 @@ $ keytool \
 - I then tried "the nginx approach", by concatenating the cert with root
   cert before import:
 
-```
+```shell
 $ cat ~/.ssl/localhost/certificate.crt ~/.ssl/ca.crt  > foo.crt
 ```
 
@@ -108,7 +108,7 @@ $ cat ~/.ssl/localhost/certificate.crt ~/.ssl/ca.crt  > foo.crt
 
 It still failed in a similar manner. Here is the error I got with curl:
 
-```
+```shell
 $ curl https://localhost:8443 -v -k
 * Rebuilt URL to: https://localhost:8443/
 *   Trying ::1...
@@ -148,7 +148,7 @@ to be able to better debug the error.
 Unfortunately, this did not help at all. Sure, I got more output messages
 being printed, but absolutely _nada_ about my SSL failure.
 
-```
+```shell
 $ bundle exec uxfactory
 INFO  [2018-04-24 09:46:51.815] UxFactoryServer: Listening at https://localhost:8443.
 INFO  [2018-04-24 09:46:51.822] UxFactoryServer: Listening at http://localhost:8000.
@@ -173,7 +173,7 @@ the certificate into the keystore. How could it possibly work without it?
 I would look further into this, but let's first try with a self-signed
 certificate (should absolutely work):
 
-```
+```shell
 $ keytool -genkeypair -keystore ~/.ssl/keystore -keyalg RSA -validity 3650
 Enter keystore password:
 Re-enter new password:
@@ -196,7 +196,7 @@ Is CN=localhost, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown correct
 This worked much better, except that it was self-signed and hence gave
 certificate warnings:
 
-```
+```shell
 $ curl https://localhost:8443 -v
 * Rebuilt URL to: https://localhost:8443/
 *   Trying ::1...
@@ -238,7 +238,7 @@ does it.)
 Now, we already know that we can import the (trusted CA-signed) certificate
 like this:
 
-```
+```shell
 $ keytool \
     -noprompt \
     -importcert \
@@ -256,7 +256,7 @@ I
 uncle Google about it, and found [this SO
 thread](https://stackoverflow.com/a/8224863/227779)
 
-```
+```shell
 $ openssl \
     pkcs12 \
     -export \
@@ -352,7 +352,7 @@ code](https://github.com/puma/puma/blob/master/ext/puma_http11/org/jruby/puma/Mi
 again and concluded that for things to work, the "key password" should be
 the same as the "keystore password". I used [this SO answer](https://stackoverflow.com/a/19532133/227779) to verify this, i.e.:
 
-```
+```shell
 $ keytool \
     -keypasswd \
     -new changeit \
@@ -363,9 +363,11 @@ $ keytool \
 keytool error: java.security.UnrecoverableKeyException: Cannot recover key
 ```
 
-Ah, now I get it! When I converted the certificate and key to PKCS12 format, I entered a key and _that key_ was now being used for the key.
+Ah, now I get it! When I converted the certificate and key to PKCS12
+format, I entered a password and _that password_ was now being used for the
+key.
 
-```
+```shell
 $ keytool \
     -keypasswd \
     -new changeit \
@@ -387,7 +389,7 @@ Verifying the HTTPS response using `openssl` also looked fine. (I will
 disregard the message about "self-signed certificate" at this point, since
 the certificate is accepted by both `curl` and Chrome.)
 
-```
+```shell
 $ echo "" | openssl s_client -showcerts -connect localhost:8443
 CONNECTED(00000005)
 depth=1 CN = eCraft uxFactory Server Development certificates
@@ -472,7 +474,7 @@ DONE
 
 ## Wrapping up
 
-The Java `keystore` tool is awkward to work with; I'd much rather just have
+The Java `keytool` tool is awkward to work with; I'd much rather just have
 a loose `.crt` and` .key` file laying on disk in this case.
 
 Some of the problems turned out to be simple PEBKAC errors from my end. I'm
