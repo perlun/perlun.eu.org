@@ -5,7 +5,9 @@ categories:
 - programming
 ---
 
-Because of a problem in a customer environment noticed recently, it's once more time to put on the "memory leak debugging hat". Join me and we'll see where the adventure takes us this time!
+Because of a problem in a customer environment noticed recently, it's once
+more time to put on the "memory leak debugging hat". Join me and we'll see
+where the adventure takes us this time!
 
 (This post is similar to my previous post: http://perlun.eu.org/en/2017/09/26/more-memory-leaks-jvm-and-jruby, but the customer environment is running a more recent version of the server this case, so the underlying problem is likely to be different.)
 
