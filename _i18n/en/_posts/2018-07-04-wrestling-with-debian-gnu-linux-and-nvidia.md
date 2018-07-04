@@ -83,17 +83,15 @@ screen using its native resolution.
 
 I ended up trying to uninstall basically _all packages_ in my whole Debian
 system, rendering it unusable and un-bootable. So I had to reinstall it.
-
 But, I didn't want to wipe the root partition completely, since I had
 unfortunately already copied in my personal files to it (and deleted them
 from the source)
 
 I got an idea: How about removing all folders except the `/home` folder?
 That should work, shouldn't it? I did that, and did a clean reinstall on
-the partition _without formatting it_ (be careful here!)
-
-I also renamed my `/home/per` folder just to be on the safe side that the
-installer wouldn't mess things up.
+the partition _without formatting it_ (be careful here!). I also renamed my
+`/home/per` folder just to be on the safe side that the installer wouldn't
+mess things up. Later on, I renamed it back.
 
 In the `tasksel` menu, I didn't choose any set of packages. I wanted to go to
 Debian `testing` first before installing anything extra. Unfortunately,
@@ -101,7 +99,7 @@ things started to mess with me again...
 
 ## A new problem: GRUB failing to install
 
-There were troubles with installing GRUB, potentially because there was
+There were trouble with installing GRUB, potentially because there was
 already a GRUB installation on my EFI boot drive, or so I presumed.
 
 I got into the GRUB bootup from the old installation, but I didn't get any
