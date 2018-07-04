@@ -8,7 +8,7 @@ categories:
 
 I wish I wouldn't have to write this, but: nVidia graphics cards seem to be
 a horrible choice for Linux desktops these days. Maybe it's always been
-like that, but the issues still remains to a certain degree.
+like that, but the issues unfortunately still remain to a certain degree.
 
 Some might find the above statement to be overly negative, but believe me:
 I really don't have any negative prejudice towards nVidia as a company. If
@@ -403,3 +403,12 @@ nVidia cards are known to have great performance, on Linux also.
 So maybe the bottom line is more something like this: if you buy nVidia and
 want to use it on Linux, don't expect it to be a plug-and-play experience.
 More like "plug and pray". :smiley:
+
+----
+
+(If some of you find the difference in my _tone_ in the beginning of this blog
+and the end to be very big, that's fine. It represents the state of my
+mind at the time of writing. When I started writing, the puzzle was still
+unsolved and I was rather frustrated. Now at the end, I understand more
+about why things broke and I feel much better about the whole thing in
+general.)
