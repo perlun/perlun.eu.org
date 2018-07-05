@@ -25,6 +25,11 @@ of the word. You don't have to go looking for it; it finds you.
 
 Not so with Debian GNU/Linux, unfortunately.
 
+(**Update**: I wrote the above in a state of frustration and anger. I ended
+up getting things working; if you want the more balanced viewpoint, skip
+down straight to the end of this post where I summarize the process and
+share my conclusions.)
+
 ## My Debian experiences with nVidia
 
 Shortly after installing Windows 10, I also installed Debian GNU/Linux on
@@ -38,10 +43,10 @@ the same machine. I was planning from beforehand to make this a dualboot setup:
   line experience.
 
 Yes, Windows has improved in that area in recent years (with WSL and all of
-that), but I still prefer a Unix-based system. I also find the freedom a
-nice aspect. I could choose Ubuntu as another option to Debian, but I
-wanted to give Debian a try for real on my machine because I know others
-who use it and like it. (Hello Daniel. :smiley:)
+that), but I still prefer a Unix-based system. I could choose Ubuntu as
+another option to Debian, but I wanted to give Debian a try for real again
+on my machine because I've both used it for years before, and I know others
+who use it today and like it. (Hello Daniel. :smiley:)
 
 Getting Debian GNU/Linux to work with this GTX 1050 was clearly not a
 painless experience. After the initial install (which went smooth), I got
@@ -59,10 +64,10 @@ cumbersome; I didn't get it working OOTB and the README also stated this:
 This is actually the case with Debian also. They have an `nvidia-driver`
 package that you can use, and [their wiki
 page](https://wiki.debian.org/NvidiaGraphicsDrivers) describes how to use
-it. However, it was hard and I often ran into the case where all I got on
-X.Org startup was a black screen and a _completely frozen system_. I
-couldn't even switch to another virtual console! So it was really, really
-crashed hard.
+it. However, it was difficult and I often ran into the case where all I got
+was a black screen on X.Org startup; the system seemed _completely frozen_.
+I couldn't even switch to another virtual console! So it was really, really
+a hard crash.
 
 I eventually managed to get it working after uninstalling the
 [xserver-xorg-video-nouveau](https://packages.debian.org/stretch/xserver-xorg-video-nouveau)
