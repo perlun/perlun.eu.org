@@ -4,6 +4,7 @@ title:  "Wrestling with Debian GNU/Linux and nVidia"
 categories:
 - linux
 - nvidia
+- geek hobbies
 ---
 
 I wish I wouldn't have to write this, but: nVidia graphics cards seem to be
