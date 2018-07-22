@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Guds Ord räcker: del 2. Om Skriftens auktoritet."
+title: "Guds Ord räcker: del 2. Om Skriftens auktoritet."
 categories:
 - bokrecensioner
 - kristen tro
