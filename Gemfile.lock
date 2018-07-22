@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/perlun/jekyll-multiple-languages-plugin.git
+  revision: 1c149891788aa5f50cb9c469f93fa15c61a14419
+  branch: fix/page-url
+  specs:
+    jekyll-multiple-languages-plugin (1.5.1)
+      jekyll (>= 2.0, < 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,8 +35,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-multiple-languages-plugin (1.5.1)
-      jekyll (>= 2.0, < 4.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
@@ -71,7 +77,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.2)
-  jekyll-multiple-languages-plugin
+  jekyll-multiple-languages-plugin!
   jekyll-paginate (~> 1.1)
   jemoji (~> 0.7)
   pygments.rb (~> 1.1)
