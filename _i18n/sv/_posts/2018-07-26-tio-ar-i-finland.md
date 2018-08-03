@@ -366,7 +366,7 @@ under tio års tid. :wink:)
 
 - Och sist men inte minst [_Manhattan Best Food
   (Åbo)_](https://www.facebook.com/manhattanbf/). Under någon av mina
-  mörkare perioder i Finland, när jag var allmänt missnöjd med det nesta,
+  mörkare perioder i Finland, när jag var allmänt missnöjd med det mesta,
   så upptäckte jag _Manhattan_. Tror det var när jag var på genomresa ensam
   med bil, på väg till Sverige. Men oj vad bra mat det var! Jag blev liksom
   helt förvånad, så här bra brukade ju inte kebabportionerna vara i detta
