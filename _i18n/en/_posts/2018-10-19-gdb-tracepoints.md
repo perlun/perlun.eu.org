@@ -8,7 +8,7 @@ categories:
 - geek hobbies
 ---
 
-Many of us have been using GNU GDB for debugging sometimes, but at least for me personally, I know that there is a lot more to learn about how to use it effectively. In this blog post I go through something I call _tracepoints_ and why they can be invaluable in debugging complex problems.
+Many of us have been using GNU GDB for debugging to some extent, but at least for me personally, I know that there is a lot more to learn about how to use it effectively. In this blog post I go through something I call _tracepoints_ and why they can be invaluable in debugging complex problems.
 
 Until now, I have typically used GDB by placing _breakpoints_ at interesting functions in my program. However, something I also liked in the world of Microsoft Visual Studio was to have the concept of _tracepoints_. Instead of necessarily breaking the program at a certain line and letting me inspect things, the debugger would instead output a user-defined "trace message", which could even include values of variables and other expressions. This can be particularly useful when the problem occurs not in a particular method call, but rather in a series of method calls or a particular _combination_ of method calls with certain parameters etc.
 
