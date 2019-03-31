@@ -4,6 +4,9 @@ cache: bundler
 script:
 - bundle exec jekyll build
 
+before_install:
+- gem install bundler --no-rdoc --no-ri
+
 after_success:
 - openssl aes-256-cbc -K $encrypted_8a6117a41ba1_key -iv $encrypted_8a6117a41ba1_iv -in id_rsa.www-data.enc -out $HOME/.ssh/id_rsa -d
 - chmod 0600 $HOME/.ssh/id_rsa
