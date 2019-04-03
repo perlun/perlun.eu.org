@@ -17,7 +17,7 @@ as [last time](/en{% post_url 2018-02-27-jruby-memory-leak-hunting-wrestling-wit
 
 ## Step #1: Trying to acquire the dump, but failing
 
-I tried first with jcmd:
+I tried first with `jcmd`:
 
 ```
 root@my-docker-container:/dist# jcmd 72 GC.heap_dump java.hprof
@@ -30,7 +30,7 @@ com.sun.tools.attach.AttachNotSupportedException: Unable to open socket file: ta
 	at sun.tools.jcmd.JCmd.main(JCmd.java:131)
 ```
 
-Then again with jmap:
+Then again with `jmap`:
 
 ```
   root@my-docker-container:/dist# jmap -dump:format=b,file=heapdump-20180315 -F 72
@@ -383,13 +383,13 @@ end
 ```
 
 Interestingly enough, this is what it looked like after just running it for
-a few minutes:
+a few minutes (the first entry in the list):
 
 ![Java using loads of memory](/images/2018-06-28-jruby-memory-leak-in-production-05-provoking-a-leak.png)
 
 But: it seemed to stop at 4.30 GiB for whatever reason. Anyhow, I created
-a heap dump of this process also - of course, I had to a completely
-different command this time but `jmap` was friendly enough to hint me in
+a heap dump of this process also - of course, I had to use a completely
+different command this time but `jmap` was friendly enough to at least hint me about
 the right direction...
 
 ```shell
@@ -404,9 +404,9 @@ JVM version is 10.0.1+10
 ```
 
 Unfortunately though, dumping the heap using the method above took ages.
-`jcmd 66135 GC.heap_dump macos-heapdump` was ages faster.
+`jcmd 66135 GC.heap_dump macos-heapdump` was a lot faster.
 
-The overview I got in Eclipse MAT was unfortunately rather different this
+The overview I got in Eclipse MAT was surprisingly rather different this
 time; I was running it with a different JRuby and Java version, which may
 have effected the outcome. (The customer environment is running on an
 older 1.7 JRuby with Java 8.)
