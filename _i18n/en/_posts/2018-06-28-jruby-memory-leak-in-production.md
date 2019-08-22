@@ -251,7 +251,7 @@ Dumping heap to heapdump-20180628 ...
 
 ## Step #3: Analyzing the dump
 
-I took the easy road and used Eclipse MAT this time, since it's the Java
+I took the easy road and used [Eclipse MAT](https://www.eclipse.org/mat/) this time, since it's the Java
 profiling tool that I know best; some of its features are nice and helpful
 in the process. Opening up the 2 GiB heap dump took a good while since
 MAT builds some indices etc. for the file along the process.
