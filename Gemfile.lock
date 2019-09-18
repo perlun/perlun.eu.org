@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/perlun/jekyll-multiple-languages-plugin.git
-  revision: c40471b1e692b7054ce4b7b82b5f9050e7f56722
-  branch: fix/page-url
+  revision: 1c149891788aa5f50cb9c469f93fa15c61a14419
+  ref: 1c149891788aa5f50cb9c469f93fa15c61a14419
   specs:
-    jekyll-multiple-languages-plugin (1.6.0)
+    jekyll-multiple-languages-plugin (1.5.1)
       jekyll (>= 2.0, < 4.0)
 
 GEM
