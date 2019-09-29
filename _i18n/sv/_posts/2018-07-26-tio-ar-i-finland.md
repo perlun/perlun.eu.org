@@ -181,11 +181,12 @@ av några _bra_ matställen också lite längre ner i texten.
     en tid sedan då jag beställde från
     [Komplett.fi](http://www.komplett.fi), att när jag funderade på det
     någon dag efteråt så _hade jag inte riktigt koll på om jag hade
-    beställt på finska eller svenska_. (Kollade upp och sidan finns bara på
-    finska.) Så, bevisligen kan man lära sig - givet tillräckligt mycket
-    tid och erfarenhet - att hantera den där typen av "beställnings-finska"
-    på ett sådant sätt att man knappt tänker på, eller stör sig på det
-    längre.
+    beställt på finska eller svenska_. (Kollade sedan upp saken och den 
+    webbsidan finns bara på finska.) Så, bevisligen kan man lära sig - 
+    givet tillräckligt mycket tid och erfarenhet - att hantera den där 
+    typen av "beställnings-finska" på ett sådant sätt att man knappt 
+    tänker på, eller stör sig på det längre. Så var det verkligen inte
+    i början för mig.
 
 - _Tryggheten_. Nu går det förstås inte riktigt att jämföra en medelstor
   stad som Umeå med en liten by som Solf, men ändå: det är en _milsvidd_
@@ -194,7 +195,7 @@ av några _bra_ matställen också lite längre ner i texten.
   varandras saker. Så gör man ju inte. Ärligheten och tryggheten finns med
   som en ryggrad i folks sätt att agera.
 
-    Även om man även jämför med Vasa som ju faktiskt är en stad så är
+    Även om man jämför med Vasa som ju faktiskt är en stad så är
     _tryggheten enorm_, vågar jag påstå. Ett exempel: vi provkörde en bil
     för tre-fyra år sedan. Bilförsäljaren såg att vi var och tittade på
     bilen och frågade om vi ville provköra den. Han hämtade nyckeln och gav
@@ -239,7 +240,7 @@ av några _bra_ matställen också lite längre ner i texten.
   om det skulle vara "aikuinen" eller ej (dvs. vuxen eller barn).
 
     Nåväl, det är väl sådant som händer även fast det är rätt ovanligt i
-    Vasa-regionen att butikspersonal faktiskt kan _så_ dålig finska. Det
+    Vasa-regionen att butikspersonal faktiskt kan _så_ dålig svenska. Det
     som hände efteråt var dock desto mer anmärkningsvärt. Den äldre herrn
     efter mig i kön, som uppenbarligen verkade vara finlandssvensk, frågade
     mig på svenska om det var så att kassörskan inte kunde svenska.
@@ -315,7 +316,7 @@ under tio års tid. :wink:)
 
   - [_Frans och Nicole (f.d.
     Fransmanni)_](https://www.raflaamo.fi/sv/vasa/frans-nicole-vasa): Även
-    detta är lite mer av "fine dining" än något för småbarnsfamiljer, men
+    detta är snarare åt "fine dining"-hållet än något för småbarnsfamiljer, men
     om man har möjlighet och har tid att lägga några timmar på en middag är
     det en trevlig restaurang att besöka. Chokladkakan (som är lös i mitten
     och fanns på Fransmanni-tiden åtminstone) är en mycket trevlig
