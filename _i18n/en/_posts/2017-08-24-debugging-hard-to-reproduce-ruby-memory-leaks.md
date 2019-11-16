@@ -939,11 +939,11 @@ $ sudo docker commit 29ec961c7ddf temp-image
 $ sudo docker run -p 12345 temp-image
 ```
 
-...and compiled Ruby 2.5.0-dev, ran `bundle install` etc. so I could boot the service. (Techncially, it was a bit more complex than this because of how the container was structured, but allow me to simplify things a bit to make the story flow better.)
+...and compiled Ruby 2.5.0-dev, ran `bundle install` etc. so I could boot the service. (Technically, it was a bit more complex than this because of how the container was structured, but allow me to simplify things a bit to make the story flow better.)
 
 I set the `nginx` config to use the new host port, and detached the `screen` I was ad-hoc-running the service in temporarily. Now all I had to do was wait, again...
 
-Next morning, RSS was around 690 MiB and `heap_allocated_pages` was 1919, with `old_objects` 574988. I waited a bit more to see if it would continue growing.
+Next morning, the RSS size was around 690 MiB and `heap_allocated_pages` was 1919, with `old_objects` 574988. I waited a bit more to see if it would continue growing.
 
 The next day, right when I woke up, I had an idea: how about googling for _"ruby 2.4.1 memory leak"_? Said and done, I did just that and found [rest-client/rest-client#611](https://github.com/rest-client/rest-client/issues/611), which pointed at [Bug #13772: Memory leak recycling stacks for threads in 2.4.1](https://bugs.ruby-lang.org/issues/13772). Interesting!
 
