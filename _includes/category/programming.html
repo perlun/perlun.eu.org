@@ -41,8 +41,88 @@
     looking into making it compile &amp; run again on modern <code>gcc</code>
     versions. A lot of the existing functionality is now working again as of
     2018.</li>
-  <li>2018: <a href="gameland">Gameland rewrite</a>, this time in Rust,
-    targetting WebAssembly</a>.)</li>
+  <li>2016: <a href="https://github.com/perlun/changelog-rs">changelog-rs</a>, a
+    little utility I wrote to get more acquainted with Rust, as well as to be a
+    help with creating releases of various software packages at work.</a>
+  <li>2017:
+    <ul>
+        <li>
+            <a href="https://github.com/perlun/perlun.eu.org">perlun.eu.org</a>
+            (70h) - I seem to have spent quite some time on this blog during
+            this year, and the commit log hints that I was both active writing
+            blog posts and hacking on the blog in general.</li>
+        <li>
+            <b>chaos</b> (27h). A bunch of <a
+            href="https://github.com/chaos4ever/chaos/compare/529fd70...1ada4b8">misc
+            fixes</a> along with the major undertaking of making the bootup
+            sequence work again (see <a
+            href="http://perlun.eu.org/en/2017/12/30/chaos-why-is-the-boot-server-unable-to-read-the-startup-script">this
+            blog post</a> for the full story). The <a
+            href="https://github.com/chaos4ever/chaos/releases/tag/0.1.0">0.1.0
+            version</a> was also released during the year, but this was before
+            all the boot sequence fixes.</li>
+        <li>
+            <a href="https://github.com/perlun/notime/">notime</a> (15h). I
+            experimented a bit with making a new time tracking app for my job. I
+            tried out both Aurelia and React as suitable platforms for it</li>
+
+        <li>
+            <a href="https://github.com/perlun/ignition">ignition</a> (8h), an
+            experimental application server written in Java that allows you to
+            write your backend code in JavaScript or TypeScript. Very
+            unfinished, this was just a proof-of-concept I wrote while
+            interviewing with a company.</li>
+    </ul>
+  </li>
+  <li>2018:
+    <ul>
+      <li>
+        <a href="gameland">Gameland rewrite</a>, this time in Rust, targetting
+        WebAssembly</a>. This one is one of the least boring ones on this list
+        in terms of "interactive multimedia experience". :-) (open the page and
+        you'll see what I mean)</li>
+      <li>
+        <b>notime</b> (44h). I ended up switching over this to Ember.js instead, also
+        trying to get things working with CouchDB and PouchDB online/offline
+        format for storing data.
+      <li>
+        <b>perlun.eu.org</b> (37h). Writing blog posts and also incorporating the
+        Gameland intro mentioned above into the site.</li>
+      <li>
+        <b>chaos</b> (31h). <a
+        href="https://github.com/chaos4ever/chaos/compare/7c965a1...151798a">Misc
+        improvements</a> leading up to <a
+        href="https://github.com/chaos4ever/chaos/releases/tag/0.2.0">the 0.2.0
+        release</a>. Apart from the bootup sequence fixes already touched upon,
+        the added support for booting from a USB pen device was one of the nicer
+        fixes.
+      <li>
+        <a href="https://github.com/perlun/UsageLogger">UsageLogger</a>
+        (9h), some high-quality spyware which you can use to stalk your children
+        a bit. ;-) Written in .NET using some direct Win32 API calls.
+      <li>
+        <a href="https://github.com/perlun/pg2couch">Pg2Couch</a> (9h). This was
+        part of the <tt>notime</tt> project; I needed to get some of our
+        existing time-tracking related data into CouchDB for usage in my new
+        app. This was also an interesting experiment with writing C# on macOS,
+        using .NET Core. I remember it was nice to get back to the world of
+        compiled languages after having worked mostly with Ruby; the speed
+        increase when crcunching fairly large volumes of data was pleasant. It
+        was also nice to get back to statically typed languages as well. OTOH,
+        .NET Core had its disadvantages as a platform as well.
+      </li>
+      <li>
+        <b>notime-pouchdb-server</b> (4h), written in TypeScript. Unfortunately, I seem
+        to have thrown away this one. It was also written to support
+        <tt>notime</tt>; I didn't get it very far but still. I think it was
+        after working on this that I wrote <a
+        href="http://perlun.eu.org/en/2018/04/27/my-first-impressions-of-nodejs">the
+        "My first impressions of Node.js" blog post</a>. It was my first real
+        project using Node.js as a backend platform and not just for wrestling
+        with CLI stuff.
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <h2>Books that I would like to read</h2>
