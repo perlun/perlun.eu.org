@@ -3,7 +3,8 @@ layout: default
 ---
 
 {% if page.category == "programming" %}
-  {% include category/programming.html %}
+  {% capture category_programming %}{% include category/programming.md %}{% endcapture %}
+  {{ category_programming | markdownify }}
 {% endif %}
 
 <div class="category-archive">
