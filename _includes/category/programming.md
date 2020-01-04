@@ -17,6 +17,14 @@ help and inspiration when learning about computer hardware, software and
 programming. This list wouldn't be what it is without him - _thanks bro_,
 I owe you a lot! :heart:
 
+<!--
+
+  Note to self: to get git logs for a full year for a repo, use this command:
+
+  git log --since "JAN 1 2019" --until "DEC 31 2019" --pretty=format:"%h %an %ad"
+
+  -->
+
 * 1996: flower.com (BBS intro, written in x86 assembly for MS-DOS.)
 * 1997: [Gameland intro](gameland) (original probably in C, for MS-DOS. See
   further down for intro about the later rewrite.
@@ -57,7 +65,9 @@ I owe you a lot! :heart:
     application server written in Java that allows you to write your backend
     code in JavaScript or TypeScript. Very unfinished, this was just a
     proof-of-concept I wrote while interviewing with a company.
-* 2018:
+* 2018: A year where I spent a lot of time job-hunting, preparing for that etc.
+  I also ended up switching jobs in August after exactly 10 years with my
+  previous employer.
   * [Gameland rewrite](gameland), this time in Rust, targetting WebAssembly.
     This one is one of the least boring ones on this list in terms of
     "interactive multimedia experience". :-) (open the page and you'll see
@@ -87,11 +97,68 @@ I owe you a lot! :heart:
     as a platform as well.
   * **notime-pouchdb-server** (4h), written in TypeScript. Unfortunately, I
     seem to have thrown away this one. It was also written to support
-    <tt>notime</tt>; I didn't get it very far but still. I think it was after
+    `notime`; I didn't get it very far but still. I think it was after
     working on this that I wrote [the "My first impressions of Node.js" blog
     post](http://perlun.eu.org/en/2018/04/27/my-first-impressions-of-nodejs).
     It was my first real project using Node.js as a backend platform and not
     just for wrestling with CLI stuff.
+* 2019: Went to no less than two shorter online CS courses at Uppsala
+  University. It was nice, but in the end it felt hard to find the proper time
+  to both be working full-time, be a parent of four children and study in the
+  evenings, so I decided to take a break with studying after the 2nd course.
+  * **chaos** (42h). Decided to make a new attempt at fixing the `soundblaster`
+    server (the previous attempt was during the fall of 2018), with the end goal
+    of playing music via the `.mod` player work again. Got it working :tada:,
+    only to realize that the music started to experience cutoffs/etc after a
+    while. Turned out that our malloc-based IPC (one memory allocation for each
+    IPC send) was a bad idea, so I refactored it - this was a nice experience
+    where I even managed to get my feet wet with unit testing of C code. It was
+    really nice to be able to place breakpoints and run my new circular queue
+    implementation from inside VS Code, and make sure various scenarios were
+    properly handled by my implementation.
+
+        This led up to
+        [the 0.3.0 release](https://github.com/chaos4ever/chaos/releases/tag/0.3.0),
+        which included for the first time in years (or decades :-) a working `.mod`
+        player.
+
+        Full list of commits for the year is
+        [here](https://github.com/chaos4ever/chaos/compare/c8744ac...0f193d9).
+
+    * **EnvironmentCriminal** (28h). This was an ASP.NET MVC/C# project I did
+      for one of the university courses previously mentioned. The project used a
+      local SQL Server DB and Entity Framework for accessing the DB. It was nice
+      to get some up-to-date experience with these technologies, and I wouldn't
+      mind using them again. I think the "classic" (non-SPA) based approach to
+      writing web sites fits my mental model better than e.g. Ember, React and
+      friends. If Blazor + WebAssembly changes things greatly I might reconsider
+      acceptin the SPA paradigm again. :-)
+
+   * **2is206_laborations** (14h). This was a little Java project we did in the
+     other university course, playing around with some (fairly simple)
+     algorithms. Sorting and things like that. I think this was a good brain
+     exercise for me. Even though I've been working as a professional programmer
+     since the last century, there are still gaps in my knowledge, areas where I
+     can improve. Getting stronger in algorithms is clearly one of these.
+     Interestingly enough, it was after going this course that I then did the
+     circular queue implementation in C for chaos (mentioned above).
+
+   * **perlun.eu.org** (2h). The blog didn't get a whole lot of love during this
+     year. I think I've almost spent at the time of writing (January the 5th)
+     more time on this during 2020 already. :-) (given the work I've spent on
+     updating these lists of projects etc)
+
+  * **perlang** (1h). Perlang is a new programming language I am thinking about
+    writing. This is yet on the drawing board; there is not a single line of
+    code written on the compiler yet. As of yet, I have jot down a few examples
+    of how the syntax could look and some aspects on how it would work. I also
+    keep a page in my notebook at work, writing down various idas I get while
+    working with my at-work project(s). :-) Who knows, maybe this will become a
+    new killer language? Either way, I'm hoping to write more about it on this blog at some point.
+
+  * **chaosdev.io** (1h). I spent a little time writing up [a release note for
+    0.3.0](https://chaosdev.io/2019/08/29/chaos-0.3.0-released.html), as well as
+    some other small fixes.
 
 ## Books that I would like to read
 
