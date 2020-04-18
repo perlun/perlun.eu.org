@@ -32,19 +32,51 @@ I owe you a lot! :heart:
 * 1999: Cybermario, an unfinished Mario-spinoff game (C++ for MS-DOS)
 * 1999: Tribes, an unfinished Civilization clone (C, targetting GTK/Linux)
 * 1999: [chaos](http://chaosdev.io), an operating system (C & x86 assembly)
+* 2000: `autochaos`, a build-tool for generating `Makefile`s for building chaos.
+  autoconf & automake-replacement better suited for our needs. (Perl)
 * 2004: iZ, a CMS written using PHP & MySQL
+* 2007: Imported the chaos code to CVS, did some minor hacking. The most
+  interesting part was that I actually got the `ne2000` server working here to
+  the point of being able to ping the chaos host from another computer. :)
+
+    Full list of commits for the year is
+  [here](https://github.com/chaos4ever/chaos/compare/ed8663f13ffe254bfa4ce40758f2a53fd178d59f...98fbb5c).
 * 2008: [cocos](https://github.com/perlun/cocos), a simple operating system-like
   toy for x86-64\. (C & x86 assembly)
+* 2008: Spent some minor work on chaos, trying to get the system compilable with
+  gcc-4.1, and making it possible to cross-compile from macOS. I eventually
+  discarded this approach and set up a proper dev environment with
+  [Vagrant](https://www.vagrantup.com/) instead.
+
+    Full list of commits for the year is
+  [here](https://github.com/chaos4ever/chaos/compare/98fbb5c...997d50b).
 * 2013: [Billigaste Matkassen](https://github.com/perlun/billigastematkassen), a
   shopping price analyzing helper. Web app written using JavaScript & jQuery
   with backend in Ruby, using Redis as data store.
 * 2013: Imported the chaos source code to
-  [GitHub](https://github.com/chaos4ever/chaos) and started looking into making
-  it compile & run again on modern `gcc` versions. A lot of the existing
-  functionality is now working again as of 2018.
+  [GitHub](https://github.com/chaos4ever/chaos) and started working on some
+  general cleanups, like removing GPL copyright file headers, changing from C to
+  C++ comment-style and working towards making the system buildable with
+  [Rake](https://github.com/ruby/rake), eventually replacing our own `autochaos`
+  build system. I think I also might have started making the system work on more
+  recent `gcc` versions here or in 2015, since 2.95 was rather outdated at this
+  point...
+
+    Full list of commits for the year is
+  [here](https://github.com/chaos4ever/chaos/compare/2a4939a9f6cbc83311bd5df02e282866639dd541...a6ec2350d7f7fb42e59c5f959a23d37b06ad95a8).
+* 2014: Had a baby boy and a very hectic year at work, so not very much time for
+  any hobby programming at all.
+* 2015: Continued towards making more and more parts of `chaos` working again,
+  along with general cleanups. Also experimented with adding support for writing
+  parts of the system in Rust.
+
+    Full list of commits for the year is
+  [here](https://github.com/chaos4ever/chaos/compare/df890963f2443d988609d040a98d9e1e1d6a8322...90e7017abae540685b8f369d334e714680b55bc8).
 * 2016: [changelog-rs](https://github.com/perlun/changelog-rs), a little utility
   I wrote to get more acquainted with Rust, as well as to be a help with
   creating releases of various software packages at work.
+* 2016: Had a nice "hacking weekend" with my brother, experimenting with a
+  Raspberry Pi port of chaos.
 * 2017:
   * [perlun.eu.org](https://github.com/perlun/perlun.eu.org) (70h) - I seem to
     have spent quite some time on this blog during this year, and the commit
@@ -102,9 +134,9 @@ I owe you a lot! :heart:
     post](http://perlun.eu.org/en/2018/04/27/my-first-impressions-of-nodejs).
     It was my first real project using Node.js as a backend platform and not
     just for wrestling with CLI stuff.
-* 2019: Went to no less than two shorter online CS courses at Uppsala
+* 2019: Went to two shorter online courses in Computer Science at Uppsala
   University. It was nice, but in the end it felt hard to find the proper time
-  to both be working full-time, be a parent of four children and study in the
+  to both be working full-time, parenting four children and studying in the
   evenings, so I decided to take a break with studying after the 2nd course.
   * **chaos** (42h). Decided to make a new attempt at fixing the `soundblaster`
     server (the previous attempt was during the fall of 2018), with the end goal
@@ -132,7 +164,7 @@ I owe you a lot! :heart:
       mind using them again. I think the "classic" (non-SPA) based approach to
       writing web sites fits my mental model better than e.g. Ember, React and
       friends. If Blazor + WebAssembly changes things greatly I might reconsider
-      acceptin the SPA paradigm again. :-)
+      accepting the SPA paradigm again. :-)
 
    * **2is206_laborations** (14h). This was a little Java project we did in the
      other university course, playing around with some (fairly simple)
