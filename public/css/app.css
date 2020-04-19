@@ -28,6 +28,10 @@ pre {
   overflow-x: scroll;
 }
 
+li p:last-child, li p:only-of-type {
+    margin-bottom: 0;
+}
+
 /* Quirk needed to get the Gameland intro looking correct in Chrome &
    Safari. */
 #screen:-webkit-full-screen {
