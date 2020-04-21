@@ -6,7 +6,7 @@ layout: default
 
 ![Per Lundberg](/images/perlun.png)
 
-På min blogg skriver jag om olika saker jag tycker är intressanta, ofta relaterad till _teologi_ eller _teknologi_, eller en blandning där emellan. :wink:
+På min blogg skriver jag om olika saker jag tycker är intressanta, ofta relaterat till _teologi_ eller _teknologi_, eller en blandning där emellan. :wink:
 
 Jag som skriver heter Per Lundberg. Som bloggmotor används [Jekyll](http://jekyllrb.com), vilken jag tycker funkar mycket bra och kan rekommendera.
 
