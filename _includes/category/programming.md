@@ -5,9 +5,10 @@ passion in my life is _programming_. It has been a hobby of mine since sometime
 in the nineties (probably 1994, 95 or somewhere around this - my oldest "proof"
 of something I wrote is the small BBS intro `flower.com` which is dated
 September 1996) and my primary way to make my living since 1999, apart from a
-few years in the 2000s.
+few years in the 2000s when I was working as a Support Technician.
 
-During these years, I've produced a number of different projects on my spare
+During the years since I started programming, I've produced a number of different
+projects on my spare
 time, of various size and grade of "seriosity". Here is a list of some of these
 projects. I'm hoping to add more links to this list over time, adding binaries
 and sometimes the source code (in the cases where it hasn't gotten lost over the
@@ -123,10 +124,10 @@ I owe you a lot! :heart:
     time-tracking related data into CouchDB for usage in my new app. This was
     also an interesting experiment with writing C# on macOS, using .NET Core.
     I remember it was nice to get back to the world of compiled languages
-    after having worked mostly with Ruby; the speed increase when crcunching
+    after having worked mostly with Ruby; the speed increase when crunching
     fairly large volumes of data was pleasant. It was also nice to get back to
     statically typed languages as well. OTOH, .NET Core had its disadvantages
-    as a platform as well.
+    as a platform as well, especially at this early stage.
   * **notime-pouchdb-server** (4h), written in TypeScript. Unfortunately, I
     seem to have thrown away this one. It was also written to support
     `notime`; I didn't get it very far but still. I think it was after
