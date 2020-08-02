@@ -20,7 +20,7 @@ Is there something similar like this in GDB and if so, how can it be used? Well,
 Type commands for breakpoint(s) 1, one per line.
 End with a line saying just "end".
 >silent
->printf "ipc_receive: Receiving from mailbox ID %d with message_parameter %x, in PID/TID: %d/%d\n", >mailbox_id, message_parameter, current_process_id, current_thread_id
+>printf "ipc_receive: Receiving from mailbox ID %d with message_parameter %x, in PID/TID: %d/%d\n", mailbox_id, message_parameter, current_process_id, current_thread_id
 >continue
 >end
 ```
