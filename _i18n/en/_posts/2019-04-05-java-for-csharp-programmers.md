@@ -5,13 +5,13 @@ categories:
 - programming
 ---
 
-In this post I'll write a quite detailed summary of the differences between Java and C# that I've experienced at my current job. Before I switched jobs in August 2018, I had been working with C#, Ruby and other programming languages for the last 15 years; Java was pretty much out of the picture for me.
+In this post I'll write about a number of differences between Java and C# that I've experienced at my current job. First a bit of a background: Before I switched jobs in August 2018, I had been working with C#, Ruby and other programming languages for the last 15 years; Java was pretty much out of the picture for me. I had worked as a Java programmer from the year 2000 to 2001, but this was inded a _long_ time ago.
 
 But then, something happened. As the saying goes, "the Lord works in mysterious ways" - this was really the case for me this time. I [wrote in a blog post](/en{% post_url 2017-04-03-my-three-favourite-programming-languages %}) a few years ago about my feelings for the Java programming language; they weren't exactly ecstatic:
 
 > Java lacks a lot of the nice things that has happened in C# for the last ten years that improve developer ergonomics and code readability. Yes, it's slowly improving, but the improvement process is dead slow. Let this VM die a painful death and rest in pieces. :laughing: Well, to be honest, the _VM_ is quite OK, it's the Java language that really deserves to be replaced with better alternatives.
 
-Little did I know back then I would be here, pretty much _exactly_ two years later, working full-time as a Java programmer. The Lord truly has an amazing sense of humor... :smiley:
+Little did I know back then I would be here, pretty much _exactly_ two years later, working full-time as a Java programmer. Sometimes, life makes you surprised. (Or, put another way, you can say that _the Lord_ makes you surprised sometimes.)
 
 Have I changed my mind, or was I wrong that time, two years ago? Or both?
 
