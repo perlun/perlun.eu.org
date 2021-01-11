@@ -136,7 +136,9 @@ I owe you a lot! :heart:
     It was my first real project using Node.js as a backend platform and not
     just for wrestling with CLI stuff.
 {% capture programming_2019 %}{% include category/programming/2019.md %}{% endcapture %}
+{% capture programming_2020 %}{% include category/programming/2020.md %}{% endcapture %}
 {{ programming_2019 | markdownify }}
+{{ programming_2020 | markdownify }}
 
 ## Books that I would like to read
 
