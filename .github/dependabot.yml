@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jekyll
+    versions:
+    - "> 3.8.7, < 4"
+  - dependency-name: pygments.rb
+    versions:
+    - 2.1.0
