@@ -120,7 +120,7 @@ compilation was 15841, and the total compilation time was 16 * 60 + 14 =
 974 seconds. That gives me a total of about _16 files_ being compiled per
 second on average during this compilation cycle, which is pretty
 impressive. So slighly below 1s per file on average, given the "12
-parallel jobs" setup - this seems moor than reasonable to me.
+parallel jobs" setup - this seems more than reasonable to me.
 
 So the bottom line: yes, the machines are indeed much, _much_ faster
 nowadays, but the Linux kernel has also grown significantly in size since
