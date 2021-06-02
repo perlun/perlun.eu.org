@@ -3,6 +3,7 @@ markdown:         redcarpet
 redcarpet:
   extensions:
     - autolink
+    - footnotes
     - strikethrough
 highlighter:      pygments
 
