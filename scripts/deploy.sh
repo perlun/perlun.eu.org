@@ -1,13 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 
-IP=85.134.56.62
+set -eu -o pipefail
 
-if [ -z `ssh-keygen -F $IP` ]; then
-  ssh-keyscan -H $IP >> ~/.ssh/known_hosts
+TARGET_HOST=perlun.eu.org
+
+if [ -z `ssh-keygen -F $TARGET_HOST` ]; then
+  ssh-keyscan -H $TARGET_HOST >> ~/.ssh/known_hosts
 fi
 
 # Reset all file & directory timestamps to beginning of epoch, to make
 # rsync avoid treating all files as modified.
 find _site -exec touch -t 197001010000 {} +
 
-rsync -e 'ssh -oBatchMode=yes' -gloprtv --delete ./_site/ www-data@$IP:perlun.eu.org
+rsync -e 'ssh -oBatchMode=yes' -gloprtv --delete ./_site/ www-data@$TARGET_HOST:perlun.eu.org
