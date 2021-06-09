@@ -5,7 +5,7 @@ categories:
 - programming
 - git
 ---
-Sometimes, you find yourself in a situation where you need to do rather drastic changes to a `git` repository, like when you actually want to remove one or more files _including their full history_ from the repository. This is where `git filter-branch` can come in handy. In this blog post, we take a closer look at how it can help us with this task.
+Sometimes, you find yourself in a situation where you need to do rather drastic changes to a `git` repository, like when you actually want to remove one or more files _including their full history_ from the repo. This is where `git filter-branch` can come in handy. In this blog post, we take a closer look at how it can help us with this task.
 
 First, a word of warning:
 
