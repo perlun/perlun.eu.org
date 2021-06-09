@@ -9,7 +9,7 @@ Sometimes, you find yourself in a situation where you need to do rather drastic 
 
 First, a word of warning:
 
-> **Warning**: `git filter-branch` is a destructive `git` operation. When used unwisely, you can easily cause permanent damage to your repository, including removing files that you didn't intend to remove. Please inspect the results of the operation carefully. **Do not** force-push the result to your main repository without having one or more proper backups of the full repository, including the `.git` directory.
+> **Warning**: `git filter-branch` is a destructive `git` operation. When used unwisely, you can easily cause permanent damage to your repository, including removing files that you didn't intend to remove. Please inspect the results of the operation carefully. **Do not** force-push the result to your main repository without having one or more proper backups of the full repository, including the `.git` directory. Also, **do not** force-push the result of this to a repository where you collaborate with other people _without properly communicating to them that you are modifying the history_, since it can affect them and their work (including already created but not merged branches) significantly.
 
 Now, let's move on to the more interesting parts.
 
