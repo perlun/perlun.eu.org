@@ -47,6 +47,10 @@ So, a few milestones in the history of this server and blog alike (some of these
 
 In other words, `pi2` had been running with its current configuration for exactly two years before I now started to change it.
 
+Here's what it looks like, by the way:
+
+![Raspberry Pi 2 photo](/images/2021-06-12-saying-goodbye-to-an-old-friend-decommissioning-a-raspberry-pi-web-server.jpg)
+
 ## "If it ain't broken, why fix it?"
 
 That's a very good question, well-deserving an answer. There are a couple of reasons actually:
