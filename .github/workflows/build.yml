@@ -1,0 +1,20 @@
+name: Build perlun.eu.org web site
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        # runs 'bundle install' and caches installed gems automatically
+        bundler-cache: true
+
+    - name: Rebuild site
+      run: make site

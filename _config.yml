@@ -18,7 +18,12 @@ paginate:         10
 category_archive:
   slugify:        true
 
-exclude: [vendor]
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
 
 languages: ["xx", "sv", "en"]
 exclude_from_localizations: ["images", "public"]

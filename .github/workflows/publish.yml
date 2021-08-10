@@ -1,0 +1,33 @@
+name: Publish perlun.eu.org web site
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        # runs 'bundle install' and caches installed gems automatically
+        bundler-cache: true
+
+    - name: Rebuild site
+      run: make site
+
+    - name: Publish site to web server
+      uses: easingthemes/ssh-deploy@v2.1.1
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rltgoDzvO --delete-after"
+          SOURCE: _site/
+          REMOTE_HOST: ${{ secrets.SSH_REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_REMOTE_USER }}
+          TARGET: ${{ secrets.SSH_REMOTE_TARGET }}
