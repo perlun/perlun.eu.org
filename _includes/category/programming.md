@@ -98,7 +98,7 @@ I owe you a lot! :heart:
     application server written in Java that allows you to write your backend
     code in JavaScript or TypeScript. Very unfinished, this was just a
     proof-of-concept I wrote while interviewing with a company.
-* 2018: A year where I spent a lot of time job-hunting, preparing for that etc.
+* 2018: A year where I spent a lot of time job-hunting, preparing for interviews etc.
   I also ended up switching jobs in August after exactly 10 years with my
   previous employer.
   * [Gameland rewrite](gameland), this time in Rust, targetting WebAssembly.
@@ -137,8 +137,10 @@ I owe you a lot! :heart:
     just for wrestling with CLI stuff.
 {% capture programming_2019 %}{% include category/programming/2019.md %}{% endcapture %}
 {% capture programming_2020 %}{% include category/programming/2020.md %}{% endcapture %}
+{% capture programming_2021 %}{% include category/programming/2021.md %}{% endcapture %}
 {{ programming_2019 | markdownify }}
 {{ programming_2020 | markdownify }}
+{{ programming_2021 | markdownify }}
 
 ## Books that I would like to read
 
