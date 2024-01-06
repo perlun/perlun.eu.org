@@ -10,4 +10,4 @@ gem 'redcarpet', '~> 3.6'
 gem 'pygments.rb', '~> 1.1'
 
 # 1.14.0 is Ruby 2.7 only
-gem 'nokogiri', '< 1.14.0'
+gem 'nokogiri', '~> 1.13.10', '< 1.14.0'
