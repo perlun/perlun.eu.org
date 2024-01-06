@@ -117,7 +117,7 @@ jshell> k == l
 $6 ==> false
 ```
 
-Now, if the previous semantic details for how `String`s are handled weren't enough, this should be more than enough to make a grown man cry... :joy:
+Now, if the previously mentioned semantic details for how `String`s are handled (`s1 == s2` sometimes working and sometimes not) weren't enough, the above boxed `Integer` weirdness should be more than enough to make a grown man cry... :joy:
 
 Some more details around this can be found in the [`Integer.valueOf()`](https://github.com/openjdk/jdk/blob/9a9add8825a040565051a09010b29b099c2e7d49/jdk/src/share/classes/java/lang/Integer.java#L814-L833) implementation. I can' say I know for sure, but I _presume_ this is the method that gets called by the JVM whenever an `int` (integer primitive) value is auto-boxed into an `Integer` (full Java-object with object identity, wrapping an `int`)
 
