@@ -8,3 +8,6 @@ gem 'jekyll', '~> 3.8'
 gem 'jemoji', '~> 0.13'
 gem 'redcarpet', '~> 3.5'
 gem 'pygments.rb', '~> 1.1'
+
+# 1.14.0 is Ruby 2.7 only
+gem 'nokogiri', '< 1.14.0'
