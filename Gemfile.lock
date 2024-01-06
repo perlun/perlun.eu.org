@@ -101,8 +101,9 @@ DEPENDENCIES
   jekyll-multiple-languages-plugin!
   jekyll-paginate (~> 1.1)
   jemoji (~> 0.13)
+  nokogiri (< 1.14.0)
   pygments.rb (~> 1.1)
   redcarpet (~> 3.6)
 
 BUNDLED WITH
-   2.2.0
+   2.3.20
