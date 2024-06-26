@@ -98,6 +98,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  ffi (< 1.17.0)
   jekyll (~> 3.9)
   jekyll-multiple-languages-plugin!
   jekyll-paginate (~> 1.1)
