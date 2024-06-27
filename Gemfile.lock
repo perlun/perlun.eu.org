@@ -24,7 +24,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.16.3)
+    ffi (1.17.0)
+    ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     gemoji (4.0.1)
     html-pipeline (2.14.3)
@@ -102,7 +103,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ffi (< 1.17.0)
+  ffi (< 1.18.0)
   jekyll (~> 3.10)
   jekyll-multiple-languages-plugin!
   jekyll-paginate (~> 1.1)
