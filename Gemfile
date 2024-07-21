@@ -7,7 +7,7 @@ gem 'jekyll-paginate', '~> 1.1'
 gem 'jekyll', '~> 3.10'
 gem 'jemoji', '~> 0.13'
 gem 'redcarpet', '~> 3.6'
-gem 'pygments.rb', '~> 1.1'
+gem 'pygments.rb', '~> 2.4'
 
 # 1.14.0 is Ruby 2.7 only
 gem 'nokogiri', '~> 1.13.10', '< 1.14.0'
