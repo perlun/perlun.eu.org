@@ -82,7 +82,8 @@ What?? Why?! I don’t understand anything. I left the project at the end of the
 
 Then, the morning after when I was still in bed, I realized what was probably happening. It was a typical “C mistake”.
 
-Remember my `__wrap_puts` method above? Take a close look at it again. It takes a parameter and saves the value of this parameter for later use. Then look at my `print()` method above: it declares a **stack variable**, builds up the correct string inside this variable, then calls `puts()`... and then returns.
+Remember my `__wrap_puts` method above? Take a close look at it again. It takes a parameter and saves the value of this parameter for later use. Then look at my `print()` method above: it declares a **stack variable** (`char formatted_number[length + 1]`), builds up the correct string inside this
+variable, then calls `puts()`... and then returns.
 
 I've highlighted "stack variable" here, because this is precisely the problem here. _Pointers to the stack cannot be saved like this_, it's doomed to fail. Unfortunately, the stack will be overwritten between the `puts()` call and the method which checks the `captured_output` content.
 
