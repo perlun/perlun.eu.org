@@ -14,7 +14,7 @@ gem 'redcarpet', '~> 3.6'
 gem 'pygments.rb', '~> 2.4'
 
 # 1.14.0 is Ruby 2.7 only
-gem 'nokogiri', '~> 1.13.10', '< 1.14.0'
+gem 'nokogiri', '~> 1.16.5'
 
 # 1.17.0 does not seem to work on Ruby 2.6:
 # https://github.com/perlun/perlun.eu.org/actions/runs/9685245708/job/26724904172?pr=50.
