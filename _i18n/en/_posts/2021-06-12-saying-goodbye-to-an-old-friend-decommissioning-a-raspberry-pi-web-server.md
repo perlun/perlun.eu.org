@@ -89,7 +89,7 @@ With this approach, I could make preparations and once I was ready to move a ser
   - <small>I had an existing Prometheus instance running. I imported the existing configuration to my Ansible inventory and added monitoring of `coruscant` to it.</small>
   - <small>Git commit [1d9e3609cc26dec3b990dc8c2a4c891c26a180db](https://github.com/perlun/ansible-roles/commit/1d9e3609cc26dec3b990dc8c2a4c891c26a180db)</small>
 - 2021-06-11: Created a [Grafana Cloud](https://grafana.com/products/cloud/) trial account.
-  - <small>I had hear about this being mentioned in podcast. The "Synthetic Monitoring" feature that they provide lets you measure the latency of your web site from various geographical regions - really nice. I set it up to monitor a couple of websites hosted on `coruscant`.</small>
+  - <small>I had heard about this being mentioned in a (Changelog, I think) podcast. The "Synthetic Monitoring" feature that they provide lets you measure the latency of your web site from various geographical regions - really nice. I set it up to monitor a couple of websites hosted on `coruscant`.</small>
 
 So, to summarize things:
 
