@@ -17,6 +17,8 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
     colorator (1.1.0)
     concurrent-ruby (1.3.3)
     csv (3.3.0)
@@ -69,8 +71,6 @@ GEM
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.10-x86_64-linux)
-      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.1.1)
@@ -100,6 +100,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64 (~> 0.2.0)
+  bigdecimal (~> 3.1.8)
   ffi (< 1.17.0)
   jekyll (~> 3.10)
   jekyll-multiple-languages-plugin!
@@ -110,4 +112,4 @@ DEPENDENCIES
   redcarpet (~> 3.6)
 
 BUNDLED WITH
-   2.3.20
+   2.5.16

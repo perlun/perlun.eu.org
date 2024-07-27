@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# These were previously included in Ruby, but will be removed as of Ruby 3.4
+gem 'base64', '~> 0.2.0'
+gem 'bigdecimal', '~> 3.1.8'
+
 gem 'jekyll-multiple-languages-plugin',
     github: 'perlun/jekyll-multiple-languages-plugin',
     ref: '1c149891788aa5f50cb9c469f93fa15c61a14419'

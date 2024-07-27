@@ -28,7 +28,7 @@ exclude:
 languages: ["xx", "sv", "en"]
 exclude_from_localizations: ["images", "public"]
 
-gems:
+plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-paginate
   - jemoji
