@@ -32,7 +32,7 @@ So, here is my list. Bear in mind that this is written from a C# programmer's pe
 - `private` and `public` - works pretty much the same as in C#.
 - `protected` - again, similar to its C# counterpart. A type with this visibility is visible to all subclasses (in the same package and others)
 - no modifier - `package private` - like `internal` in C#. Unfortunately, this can *only* be specified by not providing a modifier at all!
-- No concept like `InternalsVisibleTo`. This can be rather annoying, especially when working with unit tests and integration tests; you would want to tighten the visibility for a particular class and/or method and `InternalsVisibleTo` plays a nice role in this.
+- No concept like `InternalsVisibleTo`. This can be rather annoying, especially when working with unit tests and integration tests; you would want to tighten the visibility for a particular class and/or method and `InternalsVisibleTo` plays a nice role in this. _Update_: I discovered that you can slightly "workaround" this by putting test-related classes in the same package (i.e. `namespace` in the C# world) as the class being tested. That way, the test-related class can access the `internal` stuff because _in Java, `internal` takes the *package* into consideration rather than the *assembly*, which is the case in .NET_.
 
 ### Language runtime and language version much more tightly coupled
 
