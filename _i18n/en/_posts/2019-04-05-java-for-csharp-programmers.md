@@ -30,7 +30,7 @@ So, here is my list. Bear in mind that this is written from a C# programmer's pe
 (See also [this SO question](https://stackoverflow.com/questions/215497/in-java-difference-between-package-private-public-protected-and-private))
 
 - `private` and `public` - works pretty much the same as in C#.
-- `protected` - again, similar to its C# counterpart. A type wit this visibility is visible to all subclasses (in the same package and others)
+- `protected` - again, similar to its C# counterpart. A type with this visibility is visible to all subclasses (in the same package and others)
 - no modifier - `package private` - like `internal` in C#. Unfortunately, this can *only* be specified by not providing a modifier at all!
 - No concept like `InternalsVisibleTo`. This can be rather annoying, especially when working with unit tests and integration tests; you would want to tighten the visibility for a particular class and/or method and `InternalsVisibleTo` plays a nice role in this.
 
