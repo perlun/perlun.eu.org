@@ -3,6 +3,7 @@ layout: post
 title:  "Why C is a dangerous programming language"
 categories:
 - programming
+- perlang
 ---
 
 In this blog post, I describe one particular aspect of the C language that can lead to unpleasant surprises if you’re not careful.
