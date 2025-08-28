@@ -186,6 +186,7 @@ pre code {
 }
 .highlight pre {
   margin-bottom: 0;
+  background-color: inherit;
 }
 
 /* Gist via GitHub Pages */
