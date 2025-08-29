@@ -264,9 +264,9 @@ index 98785a2..6536505 100644
      }
 ```
 
-...and we are back on the safe (NUL-terminating) side. The second hunk above is the important one. I
-don't plan to let UTF-16 strings in Perlang be NUL terminated in the long run, but for now, it'll be
-good enough.
+...and we are back on the safe (NUL-terminating) side. The second hunk above is the important one;
+it makes sure to reserve exactly one character extra for the NUL terminator. I don't plan to let
+UTF-16 strings in Perlang be NUL terminated in the long run, but for now, it'll be good enough.
 
 ## The moral of the story
 
