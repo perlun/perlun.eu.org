@@ -7,12 +7,11 @@ categories:
 ---
 
 In this post, I describe a recent event I encountered when working on my project which illustrates
-some of the benefits of automated testing in general and Valgrind-testing in particular.
+some of the benefits of automated testing in general, and Valgrind-based testing in particular.
 
 So, I was working on a [merge
 request](https://gitlab.perlang.org/perlang/perlang/-/merge_requests/624) some days ago. I thought I
-was done with my effort, pushed up my feature branch, and pressed the "Set to auto-merge" button on
-GitLab.
+was done, pushed up my feature branch, and pressed the "Set to auto-merge" button on GitLab.
 
 However... instead of getting a nice "Merge request !624 was merged" email, I got this:
 
@@ -48,8 +47,8 @@ Name: build-openbsd
 You're receiving this email because of your account on gitlab.perlang.org.
 ```
 
-Let's look at [these errors](https://gitlab.perlang.org/perlang/perlang/-/pipelines/572) a bit more
-in detail (note, only the relevant part of the CI logs included):
+Let's look at [these errors](https://gitlab.perlang.org/perlang/perlang/-/pipelines/572) in more
+detail (note, only the relevant part of the CI logs included):
 
 ## `build-freebsd`
 
@@ -113,8 +112,8 @@ gmake: *** [Makefile:186: test-stdlib] Error 42
 ```
 
 Here, the error message is different, but we're still dealing with the same test
-(`utf16_string.cc`). The careful reader might also notice that the OpenBSD test failed with two
-errors, whereas the FreeBSD only had a single failing test case.
+(`utf16_string.cc`). The careful reader might also notice that the OpenBSD job failed with two
+errors, whereas the FreeBSD one only had a single failing test case.
 
 And finally, the Valgrind test, which is perhaps the most interesting one of them all (again, this
 is not the full output from the log):
@@ -151,18 +150,19 @@ is not the full output from the log):
 [...]
 ```
 
-I looked into this further the morning after; I had a slight thought of what could be wrong. My
-branch included a change that looked like below, but first some introduction to what you'r reading.
-The method in question is doing UTF-8 to UTF-16 conversion. `data` is a `std::vector<uint16_t>`
-variable which gets preallocated with a larger size, coping for the "maximum potential length of the
-resulting string". The idea of this change is to shrink the `std::vector` to the actual size of the
-converted string.
+I looked into this further, with a slight suspicion of what could be causing this. My branch
+included a change that looked like below, but first some introduction to what you're reading. The
+method in question is doing UTF-8 to UTF-16 conversion. `data` is a `std::vector<uint16_t>` variable
+which gets preallocated with a larger size, coping for the "maximum potential length of the
+resulting string" (based on the assumption that the UTF-16 string will be at most exactly twice the
+size of the UTF-8 string, because of the way these encodings work). The idea of this change is to
+shrink the `std::vector` to the actual size of the converted string.
 
-The reason why I don't just allocate the `std::vector` with the right size is to avoid iterating
-over the string an extra time, just to determine the size. Doing so would mean you have to parse
-each start of a UTF-8 sequence, to see the number of bytes used in it etc. The short version is that
-it's non-trivial to determine the size before actually having done the conversion, and it felt more
-efficient to do it this way.
+The reason why I don't just allocate the `std::vector` with the right size to begin with is to avoid
+iterating over the string an extra time to determine the size. Doing so would mean you have to parse
+each start of a UTF-8 sequence, to see the number of bytes used in it and so forth. The short
+version is that it's non-trivial to determine the size before actually having done the conversion,
+and it felt more efficient (and also easier) to do it this way.
 
 So, here's the change:
 
@@ -213,10 +213,10 @@ that the method was indeed expecting a NUL-terminated string.
 And that's precisely what it no longer would be getting. Because I was now shrinking the UTF-16
 string to the exact amount of `uint16_t` elements, the string would no longer contain any "extra",
 default-initialized (zero) elements at the end => attempting to print it would trigger the
-oh-not-so-wonderful _undefined behaviour_ we were seeing above. Sometimes, printing garbage
-characters. Sometimes (OpenBSD), triggering an error in the C++ standard library. And sometimes (and
-this is perhaps the _worst one of them all_), **working just like I had intended it to work**,
-printing only the "this is a an ASCII string" content.
+undesirable _undefined behaviour_ we were seeing above. Sometimes (FreeBSD), printing
+garbage characters. Sometimes (OpenBSD), triggering an error in the C++ standard library. And
+sometimes (and this is perhaps the _worst one of them all_), **working just like I had intended it
+to work**, printing only the "this is a an ASCII string" content.
 
 Where is this log, you say? It's [actually
 there](https://gitlab.perlang.org/perlang/perlang/-/jobs/3191), but I haven't shown it to you yet.
@@ -224,8 +224,8 @@ The regular `test: []` job runs on Linux, without Valgrind, and... seemed to wor
 
 `Passed!  - Failed:     0, Passed:  1527, Skipped:   444, Total:  1971, Duration: 4 m 46 s - Perlang.Tests.Integration.dll (net8.0)`
 
-(This test doesn't output anything in case all goes well, so we can only see it in the `Failed: 0`
-figure above)
+(This test doesn't output anything in case all goes well, so we can only see that it was successful
+in the `Failed: 0` figure above)
 
 ## The fix
 
@@ -246,18 +246,35 @@ index d283bfd..a344799 100644
      }
 
      bool UTF16String::is_ascii()
+diff --git src/stdlib/src/utf8_string.cc src/stdlib/src/utf8_string.cc
+index 98785a2..6536505 100644
+--- src/stdlib/src/utf8_string.cc
++++ src/stdlib/src/utf8_string.cc
+@@ -262,8 +262,9 @@ namespace perlang
+         }
+
+         // Shrink the std::vector to the actual size we need, now that we know the actual length of the converted
+-        // string.
+-        data.resize(new_length);
++        // string. The +1 part is because our print() implementation expects the string to be NUL-terminated for now.
++        // We'll try to get rid of this limitation eventually.
++        data.resize(new_length + 1);
+
+         return UTF16String::from_owned_string(std::move(data));
+     }
 ```
 
-...and we are back on the (NUL-terminating) safe side again. I don't plan to let UTF-16 strings in
-Perlang be NUL terminated in the long run, but for now, it'll be good enough.
+...and we are back on the safe (NUL-terminating) side. The second hunk above is the important one. I
+don't plan to let UTF-16 strings in Perlang be NUL terminated in the long run, but for now, it'll be
+good enough.
 
-## The morale of the story
+## The moral of the story
 
 - **You need automated testing**. That I even have to write this is a bit tragic, but there are
   still people arguing that automated testing is a waste of time. Suffice to say, if I didn't have
   automated tests in this case, I could very well have merged in broken code this time, without even
-  being aware of it. At the very least, I would have realized this when starting to port the Perlang
-  compiler to FreeBSD or OpenBSD, which brings us to the next point...
+  being aware of it. At the very least, I would have realized the breakage when starting to port the
+  Perlang compiler to FreeBSD or OpenBSD, which brings us to the next point...
 
 - **Testing on multiple platforms is good**. I know, this isn't always easily doable. I have the
   luxury of a self-hosted on-premise machine where I run ephemeral FreeBSD/NetBSD/OpenBSD containers
@@ -271,6 +288,9 @@ Perlang be NUL terminated in the long run, but for now, it'll be good enough.
   working, but _if_ you are working with a language with manual memory management (like C, C++, Zig,
   Odin), chances are that [Valgrind]((https://en.wikipedia.org/wiki/Valgrind)) will be useful to
   you. It helps you find common errors like the one's we saw above (reading outside an allocated
-  buffer), but not only that; it can also help you spot potential bad patterns like mixing `malloc`
-  and `delete` (or `new` and `free`) in C++. I think there's a bunch of other checks it can help you
-  with too, but the `memcheck` stuff is the one I have experience with myself.
+  buffer), use-after-free, double-free and memory leaks. It can also help you spot potential bad
+  patterns like mixing `malloc` and `delete` (or `new` and `free`) in C++. I think there's a bunch
+  of other checks it can help you with too, but the `memcheck` stuff is the one I have experience
+  with myself and that I find helpful.
+
+I hope this has encouraged or inspired you too. If you like my writing, please let me know!
