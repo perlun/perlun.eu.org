@@ -206,17 +206,17 @@ puts(utf8.c_str());
 
 ...the `convert.to_bytes()` only passes a `char16_t *` parameter to the method. **No string length
 parameter was provided**. In other words, my "hunch" seemed to be correct; the UTF-16-to-UTF-8
-conversion code seemed to expect a _NUL-terminated string_. I checked and
+conversion code seemed to expect a _`NUL`-terminated string_. I checked and
 [cppreference.com](https://en.cppreference.com/w/cpp/locale/wstring_convert/to_bytes.html) confirmed
-that the method was indeed expecting a NUL-terminated string.
+that the method was indeed expecting a `NUL`-terminated string.
 
 And that's precisely what it no longer would be getting. Because I was now shrinking the UTF-16
 string to the exact amount of `uint16_t` elements, the string would no longer contain any "extra",
 default-initialized (zero) elements at the end => attempting to print it would trigger the
-undesirable _undefined behaviour_ we were seeing above. Sometimes (FreeBSD), printing
-garbage characters. Sometimes (OpenBSD), triggering an error in the C++ standard library. And
-sometimes (and this is perhaps the _worst one of them all_), **working just like I had intended it
-to work**, printing only the "this is a an ASCII string" content.
+undesirable _undefined behaviour_ we were seeing above. Sometimes (FreeBSD), printing garbage
+characters. Sometimes (OpenBSD), triggering an error in the C++ standard library. And sometimes (and
+this is perhaps the _most deceitful one of them all_), **working just like I had intended it to
+work**, printing only the "this is a an ASCII string" content - despite my coding error!
 
 Where is this log, you say? It's [actually
 there](https://gitlab.perlang.org/perlang/perlang/-/jobs/3191), but I haven't shown it to you yet.
@@ -264,16 +264,16 @@ index 98785a2..6536505 100644
      }
 ```
 
-...and we are back on the safe (NUL-terminating) side. The second hunk above is the important one;
-it makes sure to reserve exactly one character extra for the NUL terminator. I don't plan to let
-UTF-16 strings in Perlang be NUL terminated in the long run, but for now, it'll be good enough.
+...and we are back on the safe (`NUL`-terminating) side. The second hunk above is the important one;
+it makes sure to reserve exactly one character extra for the `NUL` terminator. I don't plan to let
+UTF-16 strings in Perlang be `NUL` terminated in the long run, but for now, it'll be good enough.
 
 ## The moral of the story
 
-- **You need automated testing**. That I even have to write this is a bit tragic, but there are
+- **You need automated testing**. That I even have to write this is a bit amazing, but there are
   still people arguing that automated testing is a waste of time. Suffice to say, if I didn't have
-  automated tests in this case, I could very well have merged in broken code this time, without even
-  being aware of it. At the very least, I would have realized the breakage when starting to port the
+  automated tests in this case, I could very well have merged in broken code, without even being
+  aware of it. At the very least, I would have realized the breakage when starting to port the
   Perlang compiler to FreeBSD or OpenBSD, which brings us to the next point...
 
 - **Testing on multiple platforms is good**. I know, this isn't always easily doable. I have the
@@ -285,9 +285,9 @@ UTF-16 strings in Perlang be NUL terminated in the long run, but for now, it'll 
   support.
 
 - **You need Valgrind**. Well, maybe you don't. This largely depends on what kind of project you're
-  working, but _if_ you are working with a language with manual memory management (like C, C++, Zig,
-  Odin), chances are that [Valgrind]((https://en.wikipedia.org/wiki/Valgrind)) will be useful to
-  you. It helps you find common errors like the one's we saw above (reading outside an allocated
+  working on, but _if_ you are working with a language with manual memory management (like C, C++,
+  Zig, Odin), chances are that [Valgrind]((https://en.wikipedia.org/wiki/Valgrind)) will be useful
+  to you. It helps you find common errors like the one's we saw above (reading outside an allocated
   buffer), use-after-free, double-free and memory leaks. It can also help you spot potential bad
   patterns like mixing `malloc` and `delete` (or `new` and `free`) in C++. I think there's a bunch
   of other checks it can help you with too, but the `memcheck` stuff is the one I have experience
