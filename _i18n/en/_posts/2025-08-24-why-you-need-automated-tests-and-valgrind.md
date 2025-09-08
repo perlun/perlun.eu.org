@@ -270,8 +270,8 @@ UTF-16 strings in Perlang be `NUL` terminated in the long run, but for now, it'l
 
 ## The moral of the story
 
-- **You need automated testing**. That I even have to write this is a bit amazing, but there are
-  still people arguing that automated testing is a waste of time. Suffice to say, if I didn't have
+- **You need automated testing**. That I even have to write this is a bit sad, but there are still
+  people arguing that automated testing is a waste of time. Suffice to say, if I didn't have
   automated tests in this case, I could very well have merged in broken code, without even being
   aware of it. At the very least, I would have realized the breakage when starting to port the
   Perlang compiler to FreeBSD or OpenBSD, which brings us to the next point...
