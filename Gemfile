@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # These were previously included in Ruby, but will be removed as of Ruby 3.4
-gem 'base64', '~> 0.2.0'
+gem 'base64', '~> 0.3.0'
 gem 'bigdecimal', '~> 3.3.1'
 
 gem 'jekyll-multiple-languages-plugin',
