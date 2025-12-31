@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why You Need Automated Tests And Valgrind"
+title:  "Why you need automated tests and Valgrind"
 categories:
   - programming
   - perlang
