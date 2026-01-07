@@ -139,10 +139,12 @@ I owe you a lot! :heart:
 {% capture programming_2020 %}{% include category/programming/2020.md %}{% endcapture %}
 {% capture programming_2021 %}{% include category/programming/2021.md %}{% endcapture %}
 {% capture programming_2022 %}{% include category/programming/2022.md %}{% endcapture %}
+{% capture programming_2023 %}{% include category/programming/2023.md %}{% endcapture %}
 {{ programming_2019 | markdownify }}
 {{ programming_2020 | markdownify }}
 {{ programming_2021 | markdownify }}
 {{ programming_2022 | markdownify }}
+{{ programming_2023 | markdownify }}
 
 ## Books that I would like to read
 
