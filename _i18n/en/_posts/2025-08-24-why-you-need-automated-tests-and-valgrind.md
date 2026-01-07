@@ -150,7 +150,7 @@ is not the full output from the log):
 [...]
 ```
 
-I looked into this further, with a slight suspicion of what could be causing this. My branch
+I looked into this further, and got a slight suspicion of what could be causing this. My branch
 included a change that looked like below, but first some introduction to what you're reading. The
 method in question is doing UTF-8 to UTF-16 conversion. `data` is a `std::vector<uint16_t>` variable
 which gets preallocated with a larger size, coping for the "maximum potential length of the
@@ -205,7 +205,7 @@ puts(utf8.c_str());
 ```
 
 ...the `convert.to_bytes()` only passes a `char16_t *` parameter to the method. **No string length
-parameter was provided**. In other words, my "hunch" seemed to be correct; the UTF-16-to-UTF-8
+parameter was provided**. It turned out my "hunch" seemed to be correct; the UTF-16-to-UTF-8
 conversion code seemed to expect a _`NUL`-terminated string_. I checked and
 [cppreference.com](https://en.cppreference.com/w/cpp/locale/wstring_convert/to_bytes.html) confirmed
 that the method was indeed expecting a `NUL`-terminated string.
