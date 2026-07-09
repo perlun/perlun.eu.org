@@ -15,7 +15,7 @@ Now, let's move on to the more interesting parts.
 
 ### My use case: making  a previously private `git` repository into a public project
 
-Here's what I had to begin with: a private project with some [Ansible](https://github.com/ansible/ansible) roles and associated playbooks. I wanted to make this public, to share it with the community. But, here's the catch: my project also contained my private _inventory_ including both things like `host_vars` and also some files being deployed using these roles (more specifically, my the `/etc/nginx/sites-enabled` files for my `nginx` setup and other similar content).
+Here's what I had to begin with: a private project with some [Ansible](https://github.com/ansible/ansible) roles and associated playbooks. I wanted to make this public, to share it with the community. But, here's the catch: my project also contained my private _inventory_ including both things like `host_vars` and also some files being deployed using these roles (more specifically, the `/etc/nginx/sites-enabled` files for my `nginx` setup and other similar content).
 
 The original structure was a simple `git` setup that worked well for me while working on configuring these machines. There were also some licensing issues that complicated the matter; some of the content was based on proprietary code written as part of my day-time job (at [Hibox](https://www.hibox.tv)) that I couldn't just share with the world without sorting out the legal matters first.
 
