@@ -229,7 +229,7 @@ We then iterate using the above process (look at the commit, do changes if neede
 
 ### Step 6: Pushing the result to our new GitHub repo
 
-Once we are done with all of the above, let's push it to our newly created GitHub project:
+Once we are done with all of the above, let's try pushing it to our newly created GitHub project:
 
 ```
 $ git push -u origin HEAD
@@ -240,7 +240,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 ```
 
-This error message is expected at this point. Let's add the remote and try again:
+This error message is expected at this point; remember that we ran `git remote remove origin` before, to avoid pushing things by mistake? Let's add the remote and try again:
 
 ```
 $ git remote add origin git@github.com:perlun/ansible-roles.git
